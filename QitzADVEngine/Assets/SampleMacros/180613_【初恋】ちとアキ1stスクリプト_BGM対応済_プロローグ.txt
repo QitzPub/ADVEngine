@@ -1,0 +1,262 @@
+﻿;英語
+[bg file="023001.jpg"]
+
+[bgm file="bgm008_a.wav"]
+Spring--.
+
+[messageoff]
+[暗転共通]
+
+[ev file="200001.jpg"]
+[messageon]
+The many kinds of "First Love" at Mitsuba High School
+
+[messageoff]
+[暗転共通]
+
+[ev file="200002.jpg"]
+[messageon]
+From Chitose's view, a "First Love" of ♂×♀
+
+[messageoff]
+[暗転共通]
+
+[ev file="200003.jpg"]
+[messageon]
+A bit uneasy at first around Asahi who does things at his own pace but as they spend more time together,
+
+[messageoff]
+[暗転共通]
+
+[ev file="200004.jpg"]
+[messageon]
+Chitose slowly is attracted to him. However….
+
+[messageoff]
+[暗転共通]
+
+[bg file="034002.jpg"]
+[messageon]
+[永峰あさひ 出 制服(冬服) up 真顔 time=0]
+[森若ちとせ 出 顔 制服(冬服) tb 悲しみ time=0]
+【森若ちとせ】
+Asahi….he has a girlfriend…
+
+Moving forward one step at a time but how will this frustrating love story move?
+
+[永峰あさひ 消 time=0]
+[森若ちとせ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[ev file="200005.jpg"]
+[messageon]
+From Sou's view, a "First Love" of ♂×♀
+
+[messageoff]
+[暗転共通]
+
+[ev file="200006.jpg"]
+[messageon]
+Being uncomfortable around Akira at first, after finding out her secret, starts a pretend love relationship.
+
+[messageoff]
+[暗転共通]
+
+[ev file="200007.jpg"]
+[messageon]
+Unknowingly Sou starts to really fall for her….
+
+[messageoff]
+[暗転共通]
+
+[bg file="058003.jpg"]
+[messageon]
+[藤枝アキラ 出 私服(部屋着) up 悲しみ time=0]
+[加賀谷ソウ 出 顔 私服(部屋着) tb 真顔(眼鏡) time=0]
+【加賀谷ソウ】
+Let's end this.
+
+How will the love story which started from a lie end--?
+
+[藤枝アキラ 消 time=0]
+[加賀谷ソウ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[ev file="200008.jpg"]
+[messageon]
+From Chitose's view, a "First Love" of ♀×♀
+
+[messageoff]
+[暗転共通]
+
+[ev file="200009.jpg"]
+[messageon]
+Their friendship started from an incident
+
+[messageoff]
+[暗転共通]
+
+[ev file="200010.jpg"]
+[messageon]
+The friendship starts to change to something deeper….
+
+[messageoff]
+[暗転共通]
+
+[bg file="058001.jpg"]
+[messageon]
+[藤枝アキラ 出 私服(部屋着) up 悲しみ time=0]
+[森若ちとせ 出 顔 私服(部屋着) tb 悲しみ time=0]
+【森若ちとせ】
+Actually I…
+
+【森若ちとせ】
+Don't want to become your best friend….!
+
+What is going to happen to the relationship which can no longer be a friendship--?
+
+[藤枝アキラ 消 time=0]
+[森若ちとせ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[ev file="200011.jpg"]
+[messageon]
+From Sou's view, a "First Love" of ♂×♂--
+
+[messageoff]
+[暗転共通]
+
+[ev file="200012.jpg"]
+[messageon]
+Asahi finds out a secret which Sou doesn't want anyone to find out.
+
+[messageoff]
+[暗転共通]
+
+[ev file="200013.jpg"]
+[messageon]
+Unknowingly, he becomes someone special…
+
+[messageoff]
+[暗転共通]
+
+[bg file="052001.jpg"]
+[messageon]
+[永峰あさひ 出 私服(コート) up 悲しみ time=0]
+【永峰あさひ】
+You always seem irritated by me…
+
+【永峰あさひ】
+I don't think I've done anything to you…
+
+[加賀谷ソウ 出 顔 私服(コート) tb 半目 time=0]
+【加賀谷ソウ】
+It's just…
+[加賀谷ソウ 真顔]
+
+【加賀谷ソウ】
+I've fallen for you!
+
+How will this love of complementing each other end--?
+
+[永峰あさひ 消 time=0]
+[加賀谷ソウ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[ev file="200014.jpg"]
+[messageon]
+From Arata's view, a "First Love" of ♂×♂---
+
+[messageoff]
+[暗転共通]
+
+[ev file="200015.jpg"]
+[messageon]
+Moved by Keiichi's warm words,
+
+[messageoff]
+[暗転共通]
+
+[ev file="200016.jpg"]
+[messageon]
+He longs to become something more than just a student to Keiichi
+
+[messageoff]
+[暗転共通]
+
+[bg file="069002.jpg"]
+[messageon]
+[南啓一 出 冬服 sup 半目(眼鏡) time=0]
+[百瀬新 出 顔 私服(冬服) tb 真顔 time=0]
+【百瀬アラタ】
+I really like you.
+
+[百瀬新 半目照れ]
+【百瀬アラタ】
+(just want to be closer to you, touch you….someone special to you)
+
+[百瀬新 真顔照れ]
+【百瀬アラタ】
+I didn't know such a feeling before I met you.
+
+How will this love which is so close yet so far end--?
+
+[南啓一 消 time=0]
+[百瀬新 消 time=0]
+[messageoff]
+[暗転共通]
+
+
+[ev file="200017.jpg"]
+[messageon]
+From Shino's view, a "Frist Love" of ♀×♀--
+
+[messageoff]
+[暗転共通]
+
+[ev file="200018.jpg"]
+[messageon]
+Thinking they were from two different worlds, but the time they spend together start becoming precious….
+
+[messageoff]
+[暗転共通]
+
+[ev file="200019.jpg"]
+[messageon]
+Shino doesn't know what to say to Asuka's sudden feelings.
+
+[messageoff]
+[暗転共通]
+
+[bg file="028703.jpg"]
+[messageon]
+[清宮飛鳥 出 私服(冬服) sup 半目照れ time=0]
+【清宮あすか】
+You smell so good…
+
+[桜庭志乃 出 顔 私服(冬服) tb 驚き照れ time=0]
+【桜庭しの】
+Oh….!
+
+[清宮飛鳥 ときめき照れ]
+【清宮あすか】
+Can I kiss you on the lips?
+
+[桜庭志乃 驚き照れ]
+【桜庭しの】
+On the lips!?
+
+How will a love which began from a secret feeling end--?
+
+[清宮飛鳥 消 time=0]
+[桜庭志乃 消 time=0]
+[messageoff]
+[暗転共通]
+
+[ev file="200001.jpg"]
+[messageon]
+;Please open the door to their "First Love".

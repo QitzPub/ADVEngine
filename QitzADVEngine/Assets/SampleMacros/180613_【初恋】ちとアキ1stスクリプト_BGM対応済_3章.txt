@@ -1,0 +1,2018 @@
+﻿;英語
+;1話
+
+[messageoff]
+[ev file="936030.jpg"]
+[wait keyinput]
+
+[暗転共通]
+
+[bg file="039002.jpg"]
+[messageon]
+[bgm file="bgm008_a.wav"]
+A few days after the gokon--.
+
+【女子生徒１】
+Hi everyone, sorry for causing trouble last week.
+
+【女子生徒２】
+Don't be, it was completely their fault.
+
+【女子生徒１】
+Anyway, let's have a girls only thing!
+
+[森若ちとせ 出 顔 制服(冬服) tb 笑顔 time=0]
+【森若ちとせ】
+Sure!
+
+Akira and I decided to go to karaoke with the girls.
+
+【女子生徒１】
+Hey Akira, want to do the first song?
+
+[藤枝アキラ 出 制服(冬服) up 半目 time=0]
+【藤枝アキラ】
+Mmmm.
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+(Is Akira a little nervous?)
+
+【森若ちとせ】
+(What should I say?)
+
+;★Can't wait to hear you sing
+[bg file="039002.jpg"]
+[森若ちとせ 出 顔 制服(冬服) tb 微笑 time=0]
+
+【森若ちとせ】
+What are you going to sing Akira? Can't wait to hear you sing.
+
+[藤枝アキラ 出 制服(冬服) up ふてくされ time=0]
+【藤枝アキラ】
+Don't be too excited.
+
+[森若ちとせ 笑顔]
+【森若ちとせ】
+Well, if you're shy, we can sing together. Any song is ok.
+
+[藤枝アキラ 半目]
+【藤枝アキラ】
+….If you say so….
+
+【藤枝アキラ】
+--Ok, how about this song.
+
+;★Hand her the tambourine
+[bg file="039002.jpg"]
+[森若ちとせ 出 顔 制服(冬服) tb 微笑 time=0]
+
+【森若ちとせ】
+Here.
+
+I hand Akira the tambourine.
+
+[藤枝アキラ 出 制服(冬服) up ふてくされ time=0]
+【藤枝アキラ】
+Argh, I'm not so good at these things.
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+Oh… sorry.
+
+[藤枝アキラ 半目]
+【藤枝アキラ】
+I think I'd rather sing.
+
+【藤枝アキラ】
+--Ok, how about this song.
+
+;####合流####
+[藤枝アキラ 消 time=0]
+[森若ちとせ 消 time=0]
+Akira nervously entered her song and soon after was already her turn.
+
+[bgm stop]
+Although she looked so nervous, as soon as she had the mike--
+
+[藤枝アキラ 出 制服(冬服) up 真顔 time=0]
+【藤枝アキラ】
+[bgm file="bgm002_a.wav"]
+♪～
+
+Her confident voice boomed throughout the room.
+
+[森若ちとせ 出 顔 制服(冬服) tb ときめき time=0]
+【森若ちとせ】
+Wow, you're amazing!
+
+;2話
+[bg file="039002.jpg"]
+[藤枝アキラ 出 制服(冬服) up 真顔 time=0]
+
+【藤枝アキラ】
+♪～
+
+【女子生徒１】
+You have a beautiful voice!
+
+【森若ちとせ】
+You're so good at singing, you should be a singer!
+
+[藤枝アキラ 驚き照れ]
+【藤枝アキラ】
+What…no way.
+
+[藤枝アキラ ふてくされ照れ]
+【藤枝アキラ】
+You're overreacting.
+
+[森若ちとせ 出 顔 制服(冬服) tb ときめき time=0]
+【森若ちとせ】
+Nono, put in another song!
+
+【女子生徒２】
+Hey, can you sing this song too?
+
+【藤枝アキラ】
+Ahh, yeah I think so…..
+
+[藤枝アキラ 消 time=0]
+[森若ちとせ 消 time=0]
+--All of the sudden our girls karaoke day
+
+turned into Akira's solo concert.
+
+[messageoff]
+[暗転共通]
+
+[bg file="034003.jpg"]
+[messageon]
+[bgm file="bgm008_d.wav"]
+After Karaoke--.
+
+[森若ちとせ 出 顔 制服(冬服) tb 笑顔 time=0]
+【森若ちとせ】
+Ahhh, that was so fun!
+
+[藤枝アキラ 出 制服(冬服) up 微笑 time=0]
+【藤枝アキラ】
+You keep saying that.
+
+【森若ちとせ】
+It's true, you were an amazing singer.
+
+【森若ちとせ】
+We're lucky that we got to hear you for free.
+
+[藤枝アキラ 半目照れ]
+【藤枝アキラ】
+Oh stop it…
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+(She came with me to gokon because she was worried about me)
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+(What I really want to say is…)
+
+[bgm file="bgm008_c.wav"]
+;★Sorry
+[bg file="034003.jpg"]
+[森若ちとせ 出 顔 制服(冬服) tb 悲しみ time=0]
+
+【森若ちとせ】
+I'm sorry Akira.
+
+[藤枝アキラ 出 制服(冬服) up 驚き time=0]
+【藤枝アキラ】
+Huh? What is it?
+
+【森若ちとせ】
+I know that you weren't interested in gokon and
+
+【森若ちとせ】
+not only did you come but you rescued me too….
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+I'm really glad that you were there you know.
+
+;★Thank you
+[bg file="034003.jpg"]
+[森若ちとせ 出 顔 制服(冬服) tb 笑顔 time=0]
+
+【森若ちとせ】
+Thank you so much Akira.
+
+[藤枝アキラ 出 制服(冬服) up 驚き time=0]
+【藤枝アキラ】
+You're being very formal.
+
+【森若ちとせ】
+You came to the gokon with me, you  rescued me…
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+I'm really glad that you were there.
+
+[藤枝アキラ 半目照れ]
+【藤枝アキラ】
+….well I'm glad I was able to help.
+
+;####合流####
+[藤枝アキラ 微笑]
+【藤枝アキラ】
+Sure I didn't really feel like going but I'm glad I went.
+
+【藤枝アキラ】
+Like you said, I think I've made some new friends.
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+Yeah, I had fun too.
+
+[森若ちとせ 笑顔]
+【森若ちとせ】
+Let's go again if there's another opportunity?
+
+【藤枝アキラ】
+Sure…
+
+;3話
+[bg file="034003.jpg"]
+[藤枝アキラ 出 制服(冬服) up 真顔 time=0]
+
+【藤枝アキラ】
+I'm ok going with the girls but will never go to another gokon.
+
+[森若ちとせ 出 顔 制服(冬服) tb 半目 time=0]
+【森若ちとせ】
+Yeah, same here.
+
+【森若ちとせ】
+Ofcourse, I'm sure not all gokons are like that but,
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+it just feels weird to just introduce yourselves and find a guy that you like from there.
+
+[藤枝アキラ 微笑]
+【藤枝アキラ】
+You probably just want a prince charming to suddenly appear and fall in love with you right?
+
+[森若ちとせ 真顔照れ]
+【森若ちとせ】
+I don't dream that!
+
+[森若ちとせ 半目照れ]
+【森若ちとせ】
+I mean sure, I'd love to fall in love like the ones in shojyo manga but…
+
+[藤枝アキラ 笑顔]
+【藤枝アキラ】
+Hehe, I can imagine.
+
+[森若ちとせ ふてくされ]
+【森若ちとせ】
+Now you're making fun of me.
+
+[藤枝アキラ 微笑]
+【藤枝アキラ】
+No, I'm not.
+
+【藤枝アキラ】
+Why not, you never know.
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+………
+
+【森若ちとせ】
+[bgm file="bgm008_a.wav"]
+(I wonder if Akira is in love with anybody)
+
+【森若ちとせ】
+(Then again, she's quite cold to the guys. Maybe she's not interested in love now?)
+
+【森若ちとせ】
+(How should I ask her?)
+
+;★Do you like anyone?
+[bg file="034003.jpg"]
+[森若ちとせ 出 顔 制服(冬服) tb 真顔 time=0]
+
+【森若ちとせ】
+Do you like anyone?
+
+[藤枝アキラ 出 制服(冬服) up 真顔 time=0]
+【藤枝アキラ】
+Um….
+
+She let go a small voice and looked at me as if she was hesitating to answer.
+
+[森若ちとせ 驚き]
+【森若ちとせ】
+Um, you don't need to answer if you don't want to.
+
+[森若ちとせ 半目]
+【森若ちとせ】
+I just wondered and 
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+What about that caf? we always used to go to. They apparently have a seasonal cake out now.
+
+[藤枝アキラ 半目]
+【藤枝アキラ】
+Gokon.. I just have the image that only players come.
+
+;★Do you hate guys?
+[bg file="034003.jpg"]
+[森若ちとせ 出 顔 制服(冬服) tb 真顔 time=0]
+
+【森若ちとせ】
+Do you hate guys?
+
+[藤枝アキラ 出 制服(冬服) up 真顔 time=0]
+【藤枝アキラ】
+Eh…?
+
+【森若ちとせ】
+You're pretty cold to the guys at school.
+
+[藤枝アキラ 半目]
+【藤枝アキラ】
+Well not exactly….
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+I just wondered if it had anything to do with the fact that you didn't want to go to the gokon.
+
+[藤枝アキラ 半目]
+【藤枝アキラ】
+Gokon.. I just have the image that only players come.
+
+;####合流####
+[森若ちとせ 真顔]
+【森若ちとせ】
+I see… so you mean you like guys who are
+
+【森若ちとせ】
+Down to earth and serious?
+
+[藤枝アキラ ふてくされ照れ]
+【藤枝アキラ】
+Yeah if I had to choose….
+
+[森若ちとせ 驚き照れ]
+【森若ちとせ】
+(Wait, that means….)
+
+;4話
+[bg file="034003.jpg"]
+[藤枝アキラ 出 制服(冬服) up ふてくされ照れ time=0]
+
+【藤枝アキラ】
+……..
+
+[bgm file="bgm008_c.wav"]
+Even though she didn't really answer my question,
+
+it was obvious looking at her bright red face.
+
+[森若ちとせ 出 顔 制服(冬服) tb 驚き照れ time=0]
+【森若ちとせ】
+(She's in love…I'm kind of jealous)
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+(Maybe I can ask deeper?)
+
+;★Ask her type
+[bg file="034003.jpg"]
+[森若ちとせ 出 顔 制服(冬服) tb 微笑 time=0]
+
+【森若ちとせ】
+So what kind of person is your type?
+
+[藤枝アキラ 出 制服(冬服) up 驚き照れ time=0]
+【藤枝アキラ】
+I already answered….
+
+[藤枝アキラ ふてくされ照れ]
+【藤枝アキラ】
+I don't like people who are players. So people who aren't like that.
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+No, I don't mean it like that. A little more specific please….
+
+;★Ask if she's going out with him
+[bg file="034003.jpg"]
+[森若ちとせ 出 顔 制服(冬服) tb 真顔 time=0]
+
+【森若ちとせ】
+Are you going out with him?
+
+[藤枝アキラ 出 制服(冬服) up 真顔照れ time=0]
+【藤枝アキラ】
+You think I look like someone who has a boyfriend?
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+Well, you're beautiful so it wouldn't be a surprise.
+
+[藤枝アキラ 半目照れ]
+【藤枝アキラ】
+You're overestimating me.
+
+;####合流####
+[藤枝アキラ 半目照れ]
+【藤枝アキラ】
+I just have a crush on him.
+
+[森若ちとせ 驚き]
+【森若ちとせ】
+I see…
+
+[藤枝アキラ 真顔照れ]
+【藤枝アキラ】
+Ahhh, it's so hot. It must be summer soon.
+
+She changed the subject as if to end the conversation.
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+[bgm stop]
+(--Maybe she doesn't want to talk about it)
+
+【森若ちとせ】
+(Maybe she'll tell me more about it once we get to know each other better?)
+
+I feel a little sad and 
+
+stared at Akira's bright red face.
+
+;5話
+[bg file="024003.jpg"]
+
+[bgm file="bgm008_b.wav"]
+One day after school--.
+
+[森若ちとせ 出 顔 制服(夏服) tb 悲しみ time=0]
+【森若ちとせ】
+Wow, today was long.
+
+[永峰あさひ 出 制服(夏服) up あくび time=0]
+【永峰あさひ】
+Yeah, I was so sleepy.
+
+I attended the class committee with Asahi.
+
+[永峰あさひ 真顔]
+【永峰あさひ】
+I have to take care of something.
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+Ok, see you tomorrow.
+
+[永峰あさひ 消 time=0]
+[森若ちとせ 消 time=0]
+Asahi quickly went home as soon as the class committee ended.
+
+[messageoff]
+[暗転共通]
+
+[bg file="023003.jpg"]
+[messageon]
+[森若ちとせ 出 顔 制服(夏服) tb 真顔 time=0]
+【森若ちとせ】
+[bgm file="bgm006_a.wav"]
+(It's a familiar road but a little scary to walk alone in the dark….)
+
+[森若ちとせ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[bg file="034003.jpg"]
+[messageon]
+I walk home with a small nervousness--.
+
+[森若ちとせ 出 顔 制服(夏服) tb 驚き time=0]
+【森若ちとせ】
+……..!
+
+I hear footsteps behind me….
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+(Oh my god… what should I do….)
+
+;★Ignore
+[bg file="034003.jpg"]
+[森若ちとせ 出 顔 制服(夏服) tb 真顔 time=0]
+
+【森若ちとせ】
+(Maybe I'm overthinking)
+
+I decided not to let it bother me and go straight on.
+
+But--.
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+(No, this is weird. It seems that the footsteps are following me)
+
+;★Run
+[bg file="034003.jpg"]
+[森若ちとせ 出 顔 制服(夏服) tb 真顔 time=0]
+
+【森若ちとせ】
+(It's creepy, I'm going to run home)
+
+I start to run but--.
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+(What…!?)
+
+The footsteps also followed me at the same pace as I was running.
+
+【森若ちとせ】
+(It IS following me….)
+
+;####合流####
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+(Oh my god… this is really scary….)
+
+I tried to lose them by walking really quickly but I can tell the follower was shortening the distance--
+
+I notice that a tall guy was right behind me.
+
+【森若ちとせ】
+……..!
+
+【？？？】
+……..!
+
+【森若ちとせ】
+(Oh my god… this is really scary….)
+
+Even if I speed up, he catches up really quickly and can't lose him.
+
+He came really close to me--.
+
+;6話
+[bg file="034003.jpg"]
+
+[bgm file="bgm006_c.wav"]
+He came really close to me--.
+
+[森若ちとせ 出 顔 制服(夏服) tb 悲しみ time=0]
+【森若ちとせ】
+Argh…..!
+
+He aggressively groped my butt and ran away.
+
+【森若ちとせ】
+[bgm stop]
+What on earth….
+
+[森若ちとせ 消 time=0]
+I was glad that nothing worse happened but at the same time,
+
+terrified and disgusted and what had happened and quickly went home.
+
+[messageoff]
+[暗転共通]
+
+[bg file="031001.jpg"]
+[messageon]
+[藤枝アキラ 出 制服(夏服) up 驚き time=0]
+【藤枝アキラ】
+[bgm file="bgm006_c.wav"]
+Are you serious…!?
+
+[森若ちとせ 出 顔 制服(夏服) tb 悲しみ time=0]
+【森若ちとせ】
+Yeah, I was so shocked….
+
+The next day, I talked to Akira what had happened.
+
+She looked so angry as if it was her own experience.
+
+[藤枝アキラ 怒り]
+【藤枝アキラ】
+That is so wrong!!
+
+【藤枝アキラ】
+We should catch that filthy guy and punch him a few times!
+
+【森若ちとせ】
+Akira….
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+(It helped me a little that she was so sincere)
+
+【森若ちとせ】
+(What should I say?)
+
+;★I'm ok
+[bg file="031001.jpg"]
+[森若ちとせ 出 顔 制服(夏服) tb 真顔 time=0]
+
+【森若ちとせ】
+I'm ok, it was only for a split second…
+
+[藤枝アキラ 出 制服(夏服) up 怒り time=0]
+【藤枝アキラ】
+No.
+
+Akira glared at me--.
+
+[藤枝アキラ 悲しみ]
+【藤枝アキラ】
+You don't need to pretend with me.
+
+She held my hand and looked sincerely at me.
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+Ok…..
+
+;★I was scared
+[bg file="031001.jpg"]
+[森若ちとせ 出 顔 制服(夏服) tb 真顔 time=0]
+
+【森若ちとせ】
+(Is it ok that I talk to her a little more about this)
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+I was so scared, I was even afraid to walk the same road this morning…
+
+[藤枝アキラ 出 制服(夏服) up 悲しみ time=0]
+【藤枝アキラ】
+Ofcourse, after what you'd experienced….
+
+She bit her lips looks frustrated.
+
+;####合流####
+[藤枝アキラ 真顔]
+【藤枝アキラ】
+You'll still have class committees ending late right?
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+Yeah…
+
+【藤枝アキラ】
+[bgm file="bgm006_a.wav"]
+Why don't you ask Sou to walk you home?
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+Yeah… but it's going to be a hassle for him and
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+I don't really feel comfortable talking about it to guys…
+
+[藤枝アキラ ふてくされ]
+【藤枝アキラ】
+Yeah, I understand.
+
+【森若ちとせ】
+(I think I just made Akira worried even more)
+
+;7話
+[bg file="031001.jpg"]
+[森若ちとせ 出 顔 制服(夏服) tb 微笑 time=0]
+
+【森若ちとせ】
+But I feel much better now that you've listened to me.
+
+【森若ちとせ】
+Just because it happened once, doesn't mean it'll happen again.
+
+[藤枝アキラ 出 制服(夏服) up 悲しみ time=0]
+【藤枝アキラ】
+Yeah I hope so too…
+
+[藤枝アキラ 消 time=0]
+[森若ちとせ 消 time=0]
+[bgm file="bgm008_c.wav"]
+I really appreciated that she was so worried about me but
+
+as I didn't want to worry her further, I tried to sound as energetic as I could.
+
+[messageoff]
+[暗転共通]
+
+[bg file="023003.jpg"]
+[messageon]
+[森若ちとせ 出 顔 制服(夏服) tb ふてくされ time=0]
+【森若ちとせ】
+[bgm file="bgm006_a.wav"]
+(It's so late again….)
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+(Ok, I'm going to try to go home walking really fast)
+
+As I was thinking how fast I could get home--.
+
+[藤枝アキラ 出 制服(夏服) up 真顔 time=0]
+【藤枝アキラ】
+Hey Chitose.
+
+I saw Akira standing at the school gates.
+
+[森若ちとせ 驚き]
+【森若ちとせ】
+Akira? What are you doing here?
+
+[藤枝アキラ 半目]
+【藤枝アキラ】
+Nothing. Just was on my way home too.
+
+【森若ちとせ】
+Right now?
+
+[森若ちとせ 真顔照れ]
+【森若ちとせ】
+[bgm file="bgm008_a.wav"]
+(Maybe she was waiting for me all this time?)
+
+【森若ちとせ】
+(That's so nice of her! What should I say?)
+
+;★Thanks
+[bg file="023003.jpg"]
+[森若ちとせ 出 顔 制服(夏服) tb 笑顔 time=0]
+
+【森若ちとせ】
+Thanks for waiting so long.
+
+[藤枝アキラ 出 制服(夏服) up ふてくされ照れ time=0]
+【藤枝アキラ】
+I wasn't waiting.
+
+【森若ちとせ】
+Ok.
+
+;★I feel more safe
+[bg file="023003.jpg"]
+[森若ちとせ 出 顔 制服(夏服) tb 微笑 time=0]
+
+【森若ちとせ】
+I still feel more safe that you're with me.
+
+[藤枝アキラ 出 制服(夏服) up ふてくされ照れ time=0]
+【藤枝アキラ】
+I wasn't waiting!
+
+【藤枝アキラ】
+Let's just go home ok?
+
+[森若ちとせ 笑顔]
+【森若ちとせ】
+Ok.
+
+;####合流####
+[森若ちとせ 微笑]
+【森若ちとせ】
+(I know you're just saying "I wasn't waiting" to be considerate)
+
+[森若ちとせ 笑顔]
+【森若ちとせ】
+Thanks Akira…really.
+
+[藤枝アキラ 半目照れ]
+【藤枝アキラ】
+Okok. It's nothing.
+
+[藤枝アキラ 微笑]
+【藤枝アキラ】
+You're really like a dog following me like that.
+
+[森若ちとせ 驚き]
+【森若ちとせ】
+But your "really like a dog" means "cute" right?
+
+[藤枝アキラ 真顔照れ]
+【藤枝アキラ】
+Uh….
+
+[森若ちとせ 笑顔]
+【森若ちとせ】
+Doesn't feel bad to get complimented.
+
+[藤枝アキラ ふてくされ照れ]
+【藤枝アキラ】
+I'm going to leave you!
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+No, wait!
+
+;8話
+[bg file="034003.jpg"]
+[森若ちとせ 出 顔 制服(夏服) tb 微笑 time=0]
+
+【森若ちとせ】
+[bgm file="bgm008_d.wav"]
+The other day my mom….
+
+[藤枝アキラ 出 制服(夏服) up 微笑 time=0]
+【藤枝アキラ】
+What, that's….
+
+We walk home in the dark talking casually.
+
+[藤枝アキラ 消 time=0]
+[森若ちとせ 微笑]
+【森若ちとせ】
+(If there's two of us, the scary road is not so scary)
+
+My fear and worry gets overwritten by the fun chats.
+
+【森若ちとせ】
+(Akira is always there for me)
+
+[森若ちとせ 微笑照れ]
+【森若ちとせ】
+(I feel like I can do anything when I'm with her….)
+
+--I decide to propose something.
+
+[森若ちとせ 笑顔]
+【森若ちとせ】
+Are you free this weekend to hang out?
+
+[藤枝アキラ 出 制服(夏服) up 驚き time=0]
+【藤枝アキラ】
+The weekend? There's somewhere you want to go?
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+Um..
+
+【森若ちとせ】
+(I haven't thought where but what should we do…)
+
+;★Do shopping
+[bg file="034003.jpg"]
+[森若ちとせ 出 顔 制服(夏服) tb 微笑 time=0]
+
+【森若ちとせ】
+How about shopping?
+
+[藤枝アキラ 出 制服(夏服) up 微笑 time=0]
+【藤枝アキラ】
+Sure, anything else?
+
+【森若ちとせ】
+Anything else…I want to go to the movies too.
+
+;★See a movie
+[bg file="034003.jpg"]
+[森若ちとせ 出 顔 制服(夏服) tb 微笑 time=0]
+
+【森若ちとせ】
+How about seeing a movie?
+
+[藤枝アキラ 出 制服(夏服) up 微笑 time=0]
+【藤枝アキラ】
+Sounds good. Oh year I remember that,
+
+【藤枝アキラ】
+at the beginning of the term, you mentioned you like movies during our introductions.
+
+[森若ちとせ 驚き]
+【森若ちとせ】
+Wow, you remember?
+
+【藤枝アキラ】
+Yeah.
+
+【藤枝アキラ】
+Sure, anywhere else you want to go?
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+Hmm, I'd be happy if we go shopping but
+
+【森若ちとせ】
+depending on the time, just the movie is ok.
+
+;####合流####
+[藤枝アキラ 笑顔]
+【藤枝アキラ】
+Ok, then let's plan so we can do both.
+
+[森若ちとせ 笑顔]
+【森若ちとせ】
+Great!
+
+【森若ちとせ】
+(I can't wait to hang out with her on a weekend)
+
+[藤枝アキラ 消 time=0]
+[森若ちとせ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[bg file="062003.jpg"]
+[messageon]
+[森若ちとせ 出 顔 制服(夏服) tb 微笑 time=0]
+【森若ちとせ】
+[bgm file="bgm008_a.wav"]
+I'm so glad nothing happened today.
+
+Once I return to my room, I put down my school bag and sit on the bed.
+
+[森若ちとせ 微笑照れ]
+【森若ちとせ】
+It was really nice that Akira waited for me.
+
+[森若ちとせ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[ev file="939031.jpg"]
+[messageon]
+【藤枝アキラ】
+"Nothing. Just was on my way home too"
+
+[森若ちとせ 出 顔 制服(夏服) tb 笑顔 time=0]
+【森若ちとせ】
+It was so like her to pretend she wasn't waiting.
+
+[森若ちとせ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[bg file="062003.jpg"]
+[messageon]
+[森若ちとせ 出 顔 制服(夏服) tb 微笑 time=0]
+【森若ちとせ】
+(And we have plans to hang out on the weekend)
+
+【森若ちとせ】
+(Ever since we became friends, everyday has been so fun)
+
+【森若ちとせ】
+I need to think of what to wear.
+
+[森若ちとせ 消 time=0]
+[bgm stop]
+As I open the closet, I notice that my smartphone was vibrating.
+
+When I look at the screen--
+
+[森若ちとせ 出 顔 制服(夏服) tb 驚き time=0]
+【森若ちとせ】
+Oh it's Mayu.
+
+[森若ちとせ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[bg file="000001.jpg"]
+[messageon]
+[半田真優 出 私服(夏服) up 微笑 time=0]
+【半田真優】
+[bgm file="bgm008_c.wav"]
+"Hi Chitose"
+
+;9話
+[bg file="000001.jpg"]
+[半田真優 出 私服(夏服) up 微笑 time=0]
+
+【半田真優】
+"Want to come around to my place this weekend?"
+
+[森若ちとせ 出 顔 制服(夏服) tb 悲しみ time=0]
+【森若ちとせ】
+Oh sorry, I already have plans.
+
+【半田真優】
+"Oh ok, you're hanging out with your classmates?"
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+Yeah with Akira.
+
+[半田真優 驚き]
+【半田真優】
+"Wow, you guys are really close"
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+I can't decide what to wear though.
+
+[半田真優 微笑]
+【半田真優】
+"Have you ever seen her clothes?"
+
+【森若ちとせ】
+No, it'll be the first time that's not a uniform.
+
+[森若ちとせ 笑顔]
+【森若ちとせ】
+I'm looking forward to seeing what she wears.
+
+【森若ちとせ】
+Then again, I have a feeling that she's really stylish so it's a little pressure.
+
+[半田真優 笑顔]
+【半田真優】
+[bgm file="bgm008_a.wav"]
+"You sound like you're going on a date with a guy."
+
+[森若ちとせ 驚き]
+【森若ちとせ】
+Really….?
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+(Do I really sound so excited?)
+
+【森若ちとせ】
+(How should I reply?)
+
+;★I'm that excited.
+[bg file="000001.jpg"]
+[森若ちとせ 出 顔 制服(夏服) tb 微笑 time=0]
+
+【森若ちとせ】
+--.Yeah, I guess I'm that excited.
+
+[森若ちとせ 笑顔]
+【森若ちとせ】
+I can really depend on her and wish I had a boyfriend like that-.
+
+[半田真優 出 私服(夏服) up 微笑 time=0]
+【半田真優】
+"You were worried at the beginning of the term but it's great you made a good friend"
+
+[半田真優 笑顔]
+【半田真優】
+"Introduce her to me too"
+
+【森若ちとせ】
+Sure, I'm sure once you talk to her, you'll understand what I'm saying.
+
+【半田真優】
+"That I want her to be my boyfriend too? Now that I'm looking forward to!
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+Let's hang out on the weekend after.
+
+;★We're both girls so it's not a boyfriend
+[bg file="000001.jpg"]
+[森若ちとせ 出 顔 制服(夏服) tb ふてくされ time=0]
+
+【森若ちとせ】
+It's funny that you say boyfriend when we're both girls.
+
+[半田真優 出 私服(夏服) up 驚き time=0]
+【半田真優】
+"What? I didn't mean anything"
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+Oh, ok. Sorry for being serious.
+
+I feel a little awkward and change the subject.
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+Let's hang out on the weekend after.
+
+;####合流####
+[半田真優 微笑]
+【半田真優】
+"Sure, let's decide on the details later"
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+Sound good! See you soon and night night.
+
+[半田真優 消 time=0]
+[森若ちとせ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[bg file="062003.jpg"]
+[messageon]
+I hang up and relook at my closet.
+
+[森若ちとせ 出 顔 制服(夏服) tb 真顔 time=0]
+【森若ちとせ】
+[bgm file="bgm008_c.wav"]
+Seriously, what should I wear….
+
+I lay out in front of me a few styles but nothing feels right.
+
+[森若ちとせ ふてくされ]
+【森若ちとせ】
+(Maybe I'm overexcited like Mayu was saying)
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+(But then, I am really looking forward to it.)
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+[bgm file="bgm006_e.wav"]
+(--if all things go well between Akira and her crush,)
+
+【森若ちとせ】
+(I wonder if she'll put him first and we won't be able to hang out so much…)
+
+I feel a little sad as we've only just become friends.
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+(But I should be happy for her since I'm her friend)
+
+But even then, I had a small tingle in my heart.
+
+[森若ちとせ 半目]
+【森若ちとせ】
+(…I keep thinking about her ever since we became friends)
+
+【森若ちとせ】
+(It's probably just because we became good friends with someone who I thought was an unapproachable person)
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+(That's it right)
+
+I felt something that I've never felt before.
+
+[森若ちとせ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[bg file="036001.jpg"]
+[messageon]
+[bgm file="bgm002_a.wav"]
+Finally it was the weekend--.
+
+[森若ちとせ 出 顔 私服(夏服) tb 微笑 time=0]
+【森若ちとせ】
+What did you think of the movie?
+
+[藤枝アキラ 出 私服(夏服) up 微笑 time=0]
+【藤枝アキラ】
+It was the first time I saw such genre but it was better than I thought.
+
+[森若ちとせ 笑顔]
+【森若ちとせ】
+Great! I was worried you'd say it was boring.
+
+【藤枝アキラ】
+If there's another one that looks good, let's go again.
+
+[森若ちとせ 微笑]
+【森若ちとせ】
+Sure!
+
+【藤枝アキラ】
+Let's stop by the shopping mall?
+
+[森若ちとせ 笑顔]
+【森若ちとせ】
+Let's go, let's go.
+
+[藤枝アキラ 消 time=0]
+[森若ちとせ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[bg file="036001.jpg"]
+[messageon]
+As we walk around the mall --.
+
+【男性１】
+[bgm file="bgm006_a.wav"]
+Hey, are you guys shopping on your own?
+
+【男性２】
+Wanna go somewhere with us?
+
+Out of the blue, two guys stopped us.
+
+[森若ちとせ 出 顔 私服(夏服) tb 驚き time=0]
+【森若ちとせ】
+Err….
+
+;10話
+[bg file="036001.jpg"]
+[藤枝アキラ 出 私服(夏服) up 真顔 time=0]
+
+【藤枝アキラ】
+Let's just go Chitose.
+
+Akira tries to ignore them but--.
+
+【男性２】
+Hey, don't ignore us.
+
+【男性１】
+We'll take you to a more fun place.
+
+[森若ちとせ 出 顔 私服(夏服) tb 悲しみ time=0]
+【森若ちとせ】
+Please, let me go…!
+
+Suddenly one of them grabbed my wrist and couldn't shake him off.
+
+【藤枝アキラ】
+Chitose!
+
+Akira grabbed my other hand and tried to pull me.
+
+【男性２】
+Whoah, you guys are good friends, I'm gonna join too!
+
+[藤枝アキラ 怒り]
+【藤枝アキラ】
+Hey let me go.
+
+Now Akira's other hand was grabbed by the other guy and couldn't move.
+
+[藤枝アキラ 消 time=0]
+【森若ちとせ】
+(What are we going to to!?)
+
+;★Shout out loud
+[bg file="036001.jpg"]
+[森若ちとせ 出 顔 私服(夏服) tb 怒り time=0]
+
+【森若ちとせ】
+Please, stop bothering us!
+
+I shouted out and people around us turned around which worried the guys.
+
+【男性１】
+Come on, don't be shy. You guys just said that you'll come with us.
+
+As the guy replied loudly so everyone around us can hear,
+
+Those who turned around just walked past.
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+We didn't say that! Just let us go!
+
+;★Hit them with your bag
+[bg file="036001.jpg"]
+[森若ちとせ 出 顔 私服(夏服) tb 怒り time=0]
+
+【森若ちとせ】
+….!
+
+I swing my arm as hard as I can and try to hit them with my bag.
+
+【男性１】
+Whoah, you're full of energy.
+
+But of course he easily stops me.
+
+【男性１】
+Come on, we'll take you where you can relive all our stress!
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+No, please stop..!
+
+;####合流####
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+(No, someone help us….!)
+
+【？？？】
+[bgm stop]
+Hey, can you let go of the girls?
+
+【森若ちとせ】
+(That voice….)
+
+[藤枝アキラ 出 私服(夏服) up 驚き time=0]
+【藤枝アキラ】
+…..!
+
+[南啓一 出 夏服 up 真顔(眼鏡) time=0]
+【南啓一】
+Jeez…
+
+【南啓一】
+you guys seem far from being friends.
+
+[森若ちとせ 出 顔 私服(夏服) tb 驚き time=0]
+【森若ちとせ】
+Professor Minami!
+
+【男性１】
+Huh, he's your teacher?
+
+【男性２】
+Darn, that sounds like a pain. Let's go.
+
+【男性１】
+Yeah, it's so gross that you're pushy and sat so close to me!
+
+Thanks to Mr. Minami, the guys lost interest and went away.
+
+[森若ちとせ 悲しみ]
+【森若ちとせ】
+[bgm file="bgm008_c.wav"]
+Thank god…
+
+【南啓一】
+Hey are you guys ok?
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+Yes…
+
+[藤枝アキラ 出 私服(夏服) up 真顔 time=0]
+【藤枝アキラ】
+Thank you so much.
+
+[藤枝アキラ 半目照れ]
+【藤枝アキラ】
+We're really glad you walked by.
+
+[南啓一 出 夏服 up 微笑(眼鏡) time=0]
+【南啓一】
+Glad to hear.
+
+[藤枝アキラ 出 私服(夏服) up ときめき照れ time=0]
+【藤枝アキラ】
+……
+
+[森若ちとせ 出 顔 私服(夏服) tb 驚き time=0]
+【森若ちとせ】
+(Oh….?)
+
+As Mr. Minami patted Akira's shoulder,
+
+Her cheeks turned pink as she looked up to Mr. Minami.
+
+Her eyes for fixed on him and even looked a little watery.
+
+【森若ちとせ】
+(I've never seen her look at someone like that….)
+
+【森若ちとせ】
+(Is her crush Mr. Minami….?)
+
+Forgetting completely what jut happened to us,
+
+I couldn't stop looking at Akira who looked like a girl in love, and felt a rush of anxiety.
+
+[藤枝アキラ 消 time=0]
+[森若ちとせ 消 time=0]
+[messageoff]
+[暗転共通]
+
+[ev file="936000.jpg"]
+[wait keyinput]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
