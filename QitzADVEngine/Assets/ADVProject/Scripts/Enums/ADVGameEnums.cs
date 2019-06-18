@@ -20,6 +20,13 @@ namespace Qitz.ADVGame
         MESSAGEOFF,
         MESSAGEON,
         HIDE_CARACTER,
+        BG,
+        BGM_STOP,
+        BGM_PLAY,
+        SE,
+        EV,
+        WAIT,
+        
     }
 }
 

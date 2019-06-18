@@ -13,13 +13,10 @@ namespace Qitz.ADVGame
 
         IBackgroundVO BackgroundVO { get; }
 
-        ICaracterVO CenterCaracterVO { get; }
-
-        ICaracterVO LeftCaracterVO { get; }
-
-        ICaracterVO RightCaracterVO { get; }
+        List<ICaracterVO> CaracterVO { get; }
 
         List<string> Choices { get; }
 
     }
+
 }
