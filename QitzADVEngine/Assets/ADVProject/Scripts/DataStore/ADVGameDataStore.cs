@@ -31,7 +31,8 @@ namespace Qitz.ADVGame
             {
                 if (cVo.WindowVO!= null)
                 {
-                    Debug.Log(cVo.WindowVO.WindowNaviCaracterVO.Name);
+                    if(cVo.WindowVO.WindowNaviCaracterVO != null)
+                        Debug.Log(cVo.WindowVO.WindowNaviCaracterVO.Name);
                     Debug.Log(cVo.WindowVO.WindowText);
                 }
                 foreach (EffectVO eVo in cVo.Effects)

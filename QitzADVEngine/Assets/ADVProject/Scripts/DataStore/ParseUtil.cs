@@ -198,7 +198,7 @@ public sealed class ParseUtil
                     return MToken.CommandOpen;
 
                 case ']':
-                    //m_reader.Read();
+                    m_reader.Read();
                     return MToken.CommandClose;
                 
                 case '【':
@@ -241,11 +241,12 @@ public sealed class ParseUtil
                 return;
             
             case MToken.CharaNameOpen:
-                ParseMessage(ref cutVo);
+                //ParseMessage(ref cutVo);
+                ParseCharaName(ref cutVo);
                 return;
                 
             case MToken.Message:
-                ParseMessage(ref cutVo, withName: false);
+                ParseMessage(ref cutVo);
                 return;
 
             default:
@@ -318,6 +319,7 @@ public sealed class ParseUtil
                 {
                     EatWhitespace();
                     string commandName = NextWord;
+                    // TODO Waitイベント
                 }
                     break;
                 case "bg":
@@ -433,39 +435,51 @@ public sealed class ParseUtil
         return;
     }
 
-    private void ParseMessage(ref CutVO cutVo, bool withName = true)
+    private void ParseCharaName(ref CutVO cutVo)
     {
-        WindowVO wVo = new WindowVO();
         CharacterVO cVo = new CharacterVO();
-        
-        
-        string str;
-        // 名前付きのメッセージなら名前を読み込む
-        if (withName)
+        m_reader.Read();
+        string str = NextWord;
+        string characterName = characterList.FirstOrDefault(_ => _.Equals(str));
+        cVo.Name = characterName;
+        if (cutVo.WindowVO == null)
         {
-            m_reader.Read();
-            str = NextWord;
-            string characterName = characterList.FirstOrDefault(_ => _.Equals(str));
-            cVo.Name = characterName;
-            
-            EatWhitespaceWithEnter();
+            WindowVO wVo = new WindowVO();
+            wVo.WindowNaviCaracterVO = cVo;
+            cutVo.WindowVO = wVo;
         }
         else
         {
-            cVo.Name = string.Empty;
+            WindowVO wVo = (WindowVO)cutVo.WindowVO;
+            wVo.WindowNaviCaracterVO = cVo;
+            cutVo.WindowVO = wVo;
         }
+    }
 
-        str = NextMessage;
+    private void ParseMessage(ref CutVO cutVo)
+    {    
+        
+        string str = NextMessage;
+
         // 空白のみは無視する
         if (string.IsNullOrWhiteSpace(str))
         {
             return;
         }
-        cutVo.WindowVO = new WindowVO();
-        wVo.WindowText = str;
-        wVo.WindowNaviCaracterVO = cVo;
+
+        if (cutVo.WindowVO == null)
+        {
+            WindowVO wVo = new WindowVO();
+            wVo.WindowText = str;
+            cutVo.WindowVO = wVo;
+        }
+        else
+        {
+            WindowVO wVo = (WindowVO)cutVo.WindowVO;
+            wVo.WindowText = str;
+            cutVo.WindowVO = wVo;
+        }
         
-        cutVo.WindowVO = wVo;
         m_reader.Read();
         
     }
