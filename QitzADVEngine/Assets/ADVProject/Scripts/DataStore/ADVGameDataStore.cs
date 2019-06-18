@@ -18,6 +18,15 @@ namespace Qitz.ADVGame
             
             ParseUtil util = new ParseUtil(macro);
             cutVOs = util.Deserialize();
+            
+            //デバッグ用にデータ表示
+            ShowData();
+        }
+
+        public List<ICutVO> cutVOs { get; private set; }
+
+        private void ShowData()
+        {
             foreach (CutVO cVo in cutVOs)
             {
                 if (cVo.WindowVO!= null)
@@ -29,11 +38,17 @@ namespace Qitz.ADVGame
                 {
                     Debug.Log(eVo.EffectType);
                 }
-                
+
+                foreach (var VARIABLE in cVo.CaracterVO)
+                {
+                    Debug.Log("Body:" + VARIABLE.SpriteBodyName);
+                    Debug.Log("Face:" + VARIABLE.SpriteFaceName);
+                    Debug.Log("View" + VARIABLE.CharacterEffectType + " Time:" + VARIABLE.ShowTime);
+                }
+                Debug.Log(("BG:"  +cVo.BackgroundVO.SpriteBackGroundName));
+                Debug.Log(("BGM:"  +cVo.BgmID));
             }
         }
-
-        public List<ICutVO> cutVOs { get; private set; }
         
         
     }

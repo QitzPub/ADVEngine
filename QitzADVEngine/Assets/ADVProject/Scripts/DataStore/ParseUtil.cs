@@ -391,12 +391,11 @@ public sealed class ParseUtil
                         // 表示時間
                         case "time":
                             EatWhitespace();
-                            //m_reader.Read();
+                            m_reader.Read();
                             string word = NextWord;
                             int time = 0;
                             int.TryParse(word, out time);
                             cVo.ShowTime = time;
-                            
                             continue;
                         case CUT_BREAK:
                             m_reader.Read();
@@ -405,7 +404,7 @@ public sealed class ParseUtil
                         {
                             //服判定
                             string costume = costumeList.FirstOrDefault(_ => _.Equals(str));
-                            if (string.IsNullOrEmpty(costume))
+                            if (!string.IsNullOrEmpty(costume))
                             {
                                 cVo.SpriteBodyName = costume;
                             }
@@ -413,7 +412,7 @@ public sealed class ParseUtil
                             {
                                 //顔判定
                                 string face = faceList.FirstOrDefault(_ => _.Equals(str));
-                                if (string.IsNullOrEmpty(face))
+                                if (!string.IsNullOrEmpty(face))
                                 {
                                     cVo.SpriteFaceName = face;
                                 }
