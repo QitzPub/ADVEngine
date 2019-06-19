@@ -15,7 +15,7 @@ namespace Qitz.ADVGame
 
         List<ICaracterVO> CaracterVO { get; }
 
-        List<string> Choices { get; }
+        List<IChoiceVO> Choices { get; }
 
     }
 

@@ -46,6 +46,12 @@ namespace Qitz.ADVGame
                     Debug.Log("Face:" + VARIABLE.SpriteFaceName);
                     Debug.Log("View" + VARIABLE.CharacterEffectType + " Time:" + VARIABLE.ShowTime);
                 }
+
+                foreach (var VARIABLE in cVo.Choices)
+                {
+                    Debug.Log("Choice:" + VARIABLE.text);
+                    Debug.Log(("Target:" + VARIABLE.target));
+                }
                 Debug.Log(("BG:"  +cVo.BackgroundVO.SpriteBackGroundName));
                 Debug.Log(("BGM:"  +cVo.BgmID));
             }

@@ -6,6 +6,7 @@ using System.Text;
 using System;
 using System.Linq;
 using Qitz.ADVGame;
+using static System.StringSplitOptions;
 
 public sealed class ParseUtil
 {
@@ -91,6 +92,7 @@ public sealed class ParseUtil
             cutVo.CaracterVO = new List<ICaracterVO>();
             cutVo.Effects = new List<IEffectVO>();
             cutVo.BackgroundVO = new BackgroundVO();
+            cutVo.Choices = new List<IChoiceVO>();
             while ( m_reader.Peek() != -1 && CUT_BREAK.IndexOf(PeekChar) != 0)
             {
                 
@@ -132,6 +134,13 @@ public sealed class ParseUtil
                 break;
             }
         }
+    }
+
+    //２回読み込む
+    private void ReadTwice()
+    {
+        m_reader.Read();
+        m_reader.Read();
     }
     
     // 次の文字を確認
@@ -306,9 +315,28 @@ public sealed class ParseUtil
                 {
                     EatWhitespace();
                     string commandName = NextWord;
-                    m_reader.Read();
-                    m_reader.Read();
+                    ReadTwice();
                     commandName = NextWord;
+                }
+                    break;
+                // 選択肢
+                case "seladd":
+                {
+                    ChoiceVO chVo = new ChoiceVO();
+                    string word = NextWord;
+                    EatWhitespace();
+                    word = NextWord;
+                    EatWhitespace();
+                    m_reader.Read();
+                    word = NextMessage;
+                    
+                    string[] separator = {" target="};
+                    string[] choice = word.Split(separator, None);
+                    chVo.text = choice[0];
+                    string target = choice[1].Replace("target=", "");
+                    target = target.Remove(target.Length - 2);
+                    chVo.target = target;
+                    cutVo.Choices.Add(chVo);
                 }
                     break;
                 case "暗転共通":
@@ -327,15 +355,13 @@ public sealed class ParseUtil
                 {
                     EatWhitespace();
                     string commandName = NextWord;
-                    m_reader.Read();
-                    m_reader.Read();
+                    ReadTwice();
                     BackgroundVO backgroundVo = new BackgroundVO();
                     backgroundVo.SpriteBackGroundName = NextWord;
                     cutVo.BackgroundVO = backgroundVo;
                 }
                     break;
                 case "bgm":
-                    
                 {
                     EatWhitespace();
                     string bgmCommannd = NextWord;
@@ -347,8 +373,7 @@ public sealed class ParseUtil
                     // BGMファイル指定
                     else if (bgmCommannd.Equals("file"))
                     {
-                        m_reader.Read();
-                        m_reader.Read();
+                        ReadTwice();
                         cutVo.BgmID = NextWord;
                         continue;
                     }

@@ -16,6 +16,6 @@ namespace Qitz.ADVGame
 
         public List<ICaracterVO> CaracterVO { get; set; }
 
-        public List<string> Choices { get; set; }
+        public List<IChoiceVO> Choices { get; set; }
     }
 }
