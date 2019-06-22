@@ -14,41 +14,6 @@ public sealed class ParseUtil
     const string WORD_BREAK = " \t\r{}[]【】,:\"=";	// ワードを区切る記号
     const string CUT_BREAK = "\n";
 
-    // TODO 自動生成
-    private static readonly string[] characterList = new[]
-    {
-        "永峰あさひ",
-        "森若ちとせ",
-        "藤枝アキラ",
-        "女子生徒１",
-        "加賀谷ソウ",
-        "男子生徒１",
-        "南啓一",
-    };
-    
-    // TODO 自動生成
-    private static readonly string[] costumeList = new[]
-    {
-        "制服(冬服)",
-        "私服(部屋着)",
-        "私服(コート)",
-        "冬服",
-        "私服(冬服)",
-    };
-    
-    //TODO 自動生成
-    private static readonly string[] faceList = new[]
-    {
-        "真顔",
-        "悲しみ",
-        "真顔(眼鏡)",
-        "半目",
-        "半目(眼鏡)",
-        "微笑",
-        "笑顔",
-        
-    };
-
     private StringReader	m_reader;
 
     private enum MToken
@@ -61,20 +26,6 @@ public sealed class ParseUtil
         SemiColon,      // ;
         Message,        // Any Character
         Null,			// null
-    }
-
-    // TODO 自動生成
-    private enum CommandList
-    {
-        Comment,
-        Event,
-        Wait,
-        BackGround,
-        BGM,
-        SE,
-        MessageOn,
-        MessageOff,
-        
     }
     
     public ParseUtil( string macroText )
@@ -317,6 +268,10 @@ public sealed class ParseUtil
                     string commandName = NextWord;
                     ReadTwice();
                     commandName = NextWord;
+                    BackgroundVO backgroundVo = new BackgroundVO();
+                    backgroundVo.SpriteBackGroundName = commandName;
+                    backgroundVo.Name = commandName;
+                    cutVo.BackgroundVO = backgroundVo;
                 }
                     break;
                 // 選択肢
@@ -328,11 +283,14 @@ public sealed class ParseUtil
                     word = NextWord;
                     EatWhitespace();
                     m_reader.Read();
+                    //一旦行の最後まで読み込む
                     word = NextMessage;
                     
+                    //テキストとターゲットを分離。もっと良い方法は無いだろうか
                     string[] separator = {" target="};
                     string[] choice = word.Split(separator, None);
                     chVo.text = choice[0];
+                    //ターゲットの不要な部分を削除
                     string target = choice[1].Replace("target=", "");
                     target = target.Remove(target.Length - 2);
                     chVo.target = target;
@@ -394,7 +352,7 @@ public sealed class ParseUtil
             
 
             // キャラの表示系イベント
-            string characterName = characterList.FirstOrDefault(_ => _.Equals(str));
+            string characterName = ParseCommandList.characterList.FirstOrDefault(_ => _.Equals(str));
 
             if (characterName != null)
             {
@@ -403,8 +361,12 @@ public sealed class ParseUtil
                 m_reader.Read();
                 while (CUT_BREAK.IndexOf(PeekChar) != 0 && m_reader.Peek() != -1)
                 {
-                    //EatWhitespace();
                     str = NextWord;
+                    if (string.IsNullOrEmpty(str))
+                    {
+                        m_reader.Read();
+                        continue;
+                    }
                     switch (str)
                     {
                         case "出":
@@ -430,7 +392,7 @@ public sealed class ParseUtil
                         default:
                         {
                             //服判定
-                            string costume = costumeList.FirstOrDefault(_ => _.Equals(str));
+                            string costume = ParseCommandList.costumeList.FirstOrDefault(_ => _.Equals(str));
                             if (!string.IsNullOrEmpty(costume))
                             {
                                 cVo.SpriteBodyName = costume;
@@ -438,10 +400,14 @@ public sealed class ParseUtil
                             else
                             {
                                 //顔判定
-                                string face = faceList.FirstOrDefault(_ => _.Equals(str));
+                                string face = ParseCommandList.faceList.FirstOrDefault(_ => _.Equals(str));
                                 if (!string.IsNullOrEmpty(face))
                                 {
                                     cVo.SpriteFaceName = face;
+                                }
+                                else
+                                {
+                                    Debug.LogWarning("UnknownCommand:" + str);
                                 }
                             }
 
@@ -465,7 +431,7 @@ public sealed class ParseUtil
         CharacterVO cVo = new CharacterVO();
         m_reader.Read();
         string str = NextWord;
-        string characterName = characterList.FirstOrDefault(_ => _.Equals(str));
+        string characterName = ParseCommandList.characterList.FirstOrDefault(_ => _.Equals(str));
         cVo.Name = characterName;
         if (cutVo.WindowVO == null)
         {
