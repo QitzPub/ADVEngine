@@ -405,6 +405,7 @@ public sealed class ParseUtil
                                 {
                                     cVo.SpriteFaceName = face;
                                 }
+                                // 何も見つからなかったら登録コマンドでは無い
                                 else
                                 {
                                     Debug.LogWarning("UnknownCommand:" + str);

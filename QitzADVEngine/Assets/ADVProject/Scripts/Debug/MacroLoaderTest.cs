@@ -8,11 +8,20 @@ namespace Qitz.ADVGame
     {
         
         ADVGameDataStore dataStore;
+
+        public TextAsset testMacro;
         // Start is called before the first frame update
         void Start()
         {
-            TextAsset txt = Resources.Load<TextAsset>("TestMacro");
-            dataStore = new ADVGameDataStore(txt.text);
+            if (testMacro == null)
+            {
+                TextAsset txt = Resources.Load<TextAsset>("TestMacro");
+                dataStore = new ADVGameDataStore(txt.text);
+            }
+            else
+            {
+                dataStore = new ADVGameDataStore(testMacro.text);
+            }
 
         }
 
