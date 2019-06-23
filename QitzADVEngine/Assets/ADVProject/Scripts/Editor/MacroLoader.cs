@@ -3,21 +3,26 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using System.IO;
+using System.Linq;
 
 public class MacroLoader : EditorWindow
 {
     private static List<string> nameList = new List<string>();
     private static List<string> costumeList = new List<string>();
     private static List<string> faceList = new List<string>();
-
-    private static bool isOpenName = false;
-    private static bool isOpenCostume = false;
-    private static bool isOpenFace = false;
     
     private static Vector2 leftScrollPos = Vector2.zero;
+    private static Tab tab = Tab.Name;
 
     private static readonly string dataPath = "/ADVProject/Scripts/Editor/Resources/";
     private static readonly string commandPath = "/ADVProject/Scripts/DataStore/";
+    
+    enum Tab
+    {
+        Name,
+        Costume,
+        Face,
+    }
     
     [MenuItem("Tools/MacroLoader")]
     static void Open()
@@ -34,6 +39,12 @@ public class MacroLoader : EditorWindow
     private void OnGUI()
     {
         EditorGUILayout.LabelField( "マクロの人物名、服装、表情のEditorです" );
+        using (new EditorGUILayout.HorizontalScope()) {
+            GUILayout.FlexibleSpace();
+            // タブを描画する
+            tab = (Tab)GUILayout.Toolbar((int)tab, Styles.TabToggles, Styles.TabButtonStyle, Styles.TabButtonSize);
+            GUILayout.FlexibleSpace();
+        }
         if (GUILayout.Button("Save"))
         {
             string template = Resources.Load<TextAsset>("ClassTemplate").text;
@@ -46,12 +57,7 @@ public class MacroLoader : EditorWindow
         }
         leftScrollPos = EditorGUILayout.BeginScrollView( leftScrollPos,GUI.skin.box );
         
-        bool isOpen = EditorGUILayout.Foldout(isOpenName, "人物名");
-        if (isOpen != isOpenName)
-        {
-            isOpenName = isOpen;
-        }
-        if(isOpen){
+        if(tab == Tab.Name){
         for (int i = 0; i < nameList.Count; i++)
             
             {
@@ -64,12 +70,7 @@ public class MacroLoader : EditorWindow
         }
         }
         
-        isOpen = EditorGUILayout.Foldout(isOpenCostume, "服装");
-        if (isOpen != isOpenCostume)
-        {
-            isOpenCostume = isOpen;
-        }
-        if(isOpen){
+        if(tab == Tab.Costume){
             for (int i = 0; i < costumeList.Count; i++)
             {
                 costumeList[i] = EditorGUILayout.TextField("", costumeList[i]);
@@ -80,12 +81,7 @@ public class MacroLoader : EditorWindow
             }
         }
         
-        isOpen = EditorGUILayout.Foldout(isOpenFace, "表情");
-        if (isOpen != isOpenFace)
-        {
-            isOpenFace = isOpen;
-        }
-        if(isOpen){
+        if(tab == Tab.Face){
             for (int i = 0; i < faceList.Count; i++)
             {
                 faceList[i] = EditorGUILayout.TextField("", faceList[i]);
@@ -127,5 +123,23 @@ public class MacroLoader : EditorWindow
         File.WriteAllText(WritePath+".txt", ListText);
 
         return str;
+    }
+    
+    private static class Styles
+    {
+        private static GUIContent[] _tabToggles = null;
+        public static GUIContent[] TabToggles{
+            get {
+                if (_tabToggles == null) {
+                    _tabToggles = System.Enum.GetNames(typeof(Tab)).Select(x => new GUIContent(x)).ToArray();
+                }
+                return _tabToggles;
+            }
+        }
+        
+        public static readonly GUIStyle TabButtonStyle = "LargeButton";
+
+        // GUI.ToolbarButtonSize.FitToContentsも設定できる
+        public static readonly GUI.ToolbarButtonSize TabButtonSize = GUI.ToolbarButtonSize.Fixed;
     }
 }
