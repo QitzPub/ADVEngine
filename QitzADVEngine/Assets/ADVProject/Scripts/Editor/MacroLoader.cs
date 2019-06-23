@@ -13,6 +13,8 @@ public class MacroLoader : EditorWindow
     private static bool isOpenName = false;
     private static bool isOpenCostume = false;
     private static bool isOpenFace = false;
+    
+    private static Vector2 leftScrollPos = Vector2.zero;
 
     private static readonly string dataPath = "/ADVProject/Scripts/Editor/Resources/";
     private static readonly string commandPath = "/ADVProject/Scripts/DataStore/";
@@ -20,6 +22,9 @@ public class MacroLoader : EditorWindow
     [MenuItem("Tools/MacroLoader")]
     static void Open()
     {
+        nameList.Clear();
+        costumeList.Clear();
+        faceList.Clear();
         EditorWindow.GetWindow<MacroLoader>( "MacroLoaderEditor" );
         ReadList(nameList, "NameList");
         ReadList(costumeList, "CostumeList");
@@ -29,7 +34,6 @@ public class MacroLoader : EditorWindow
     private void OnGUI()
     {
         EditorGUILayout.LabelField( "マクロの人物名、服装、表情のEditorです" );
-
         if (GUILayout.Button("Save"))
         {
             string template = Resources.Load<TextAsset>("ClassTemplate").text;
@@ -40,6 +44,7 @@ public class MacroLoader : EditorWindow
 
             File.WriteAllText(Application.dataPath + commandPath + "ParseCommandList.cs", template);
         }
+        leftScrollPos = EditorGUILayout.BeginScrollView( leftScrollPos,GUI.skin.box );
         
         bool isOpen = EditorGUILayout.Foldout(isOpenName, "人物名");
         if (isOpen != isOpenName)
@@ -90,6 +95,7 @@ public class MacroLoader : EditorWindow
                 faceList.Add("");
             }
         }
+        EditorGUILayout.EndScrollView();
     }
 
     private static void ReadList(List<string> list, string fileName)
