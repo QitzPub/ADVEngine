@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="ADVProject" t="Include">
+          <e p="Resources" t="Include">
+            <e p="TestMacro.txt" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Controller" t="Include">
+              <e p="ADVGameController.cs" t="Include" />
+            </e>
+            <e p="DataStore" t="Include">
+              <e p="ADVGameDataStore.cs" t="Include" />
+              <e p="ADVSpriteDataStore.cs" t="Include" />
+              <e p="IADVSpriteDataStore.cs" t="Include" />
+              <e p="ParseCommandList.cs" t="Include" />
+              <e p="ParseUtil.cs" t="Include" />
+            </e>
+            <e p="Debug" t="Include">
+              <e p="MacroLoaderTest.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="MacroLoader.cs" t="Include" />
+              <e p="Resources" t="Include">
+                <e p="ClassTemplate.txt" t="Include" />
+                <e p="CostumeList.txt" t="Include" />
+                <e p="Facelist.txt" t="Include" />
+                <e p="NameList.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Enums" t="Include">
+              <e p="ADVGameEnums.cs" t="Include" />
+            </e>
+            <e p="GameSystemInitializer" t="Include">
+              <e p="GameSystemInitializer.cs" t="Include" />
+            </e>
+            <e p="Model" t="Include">
+              <e p="BackgroundVO.cs" t="Include" />
+              <e p="CharacterVO.cs" t="Include" />
+              <e p="ChoiceVO.cs" t="Include" />
+              <e p="CutVO.cs" t="Include" />
+              <e p="EffectVO.cs" t="Include" />
+              <e p="WindowVO.cs" t="Include" />
+            </e>
+            <e p="Repository" t="Include">
+              <e p="ADVGameRepository.cs" t="Include" />
+            </e>
+            <e p="ValueObjects" t="Include">
+              <e p="IADVSpriteVO.cs" t="Include" />
+              <e p="IBackgroundVO.cs" t="Include" />
+              <e p="ICaracterVO.cs" t="Include" />
+              <e p="IChoiceVO.cs" t="Include" />
+              <e p="ICutVO.cs" t="Include" />
+              <e p="IEffectVO.cs" t="Include" />
+              <e p="IWindowVO.cs" t="Include" />
+            </e>
+            <e p="View" t="Include">
+              <e p="AdvView.cs" t="Include" />
+              <e p="BackgroundView.cs" t="Include" />
+              <e p="Base" t="Include">
+                <e p="ABackgroundView.cs" t="Include" />
+                <e p="ACharacterView.cs" t="Include" />
+                <e p="AChoiceSelectView.cs" t="Include" />
+                <e p="ADVGameView.cs" t="Include" />
+                <e p="AWindowView.cs" t="Include" />
+              </e>
+              <e p="CharacterView.cs" t="Include" />
+              <e p="ChoiceSelectView.cs" t="Include" />
+              <e p="SelectItemView.cs" t="Include" />
+              <e p="WindowView.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ArchitectureCore" t="Include">
+          <e p="Controller" t="Include">
+            <e p="AController.cs" t="Include" />
+            <e p="IController.cs" t="Include" />
+          </e>
+          <e p="DataStore" t="Include">
+            <e p="ADataStore.cs" t="Include" />
+          </e>
+          <e p="Repository" t="Include">
+            <e p="ARepository.cs" t="Include" />
+          </e>
+          <e p="Transmitter" t="Include">
+            <e p="BaseFactory.cs" t="Include" />
+            <e p="BaseTransmitter.cs" t="Include" />
+            <e p="ITransmitter.cs" t="Include" />
+            <e p="PrefabFolder.cs" t="Include" />
+          </e>
+          <e p="ValueObject" t="Include">
+            <e p="BaseVO.cs" t="Include" />
+            <e p="IVO.cs" t="Include" />
+          </e>
+          <e p="View" t="Include">
+            <e p="AView.cs" t="Include" />
+            <e p="IView.cs" t="Include" />
+          </e>
+        </e>
+        <e p="SampleMacros" t="Include">
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_1章 1.txt" t="Include" />
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_1章.txt" t="Include" />
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_2章.txt" t="Include" />
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_3章.txt" t="Include" />
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_4章.txt" t="Include" />
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_5章.txt" t="Include" />
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_6章.txt" t="Include" />
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_7章.txt" t="Include" />
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_8章.txt" t="Include" />
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_9章.txt" t="Include" />
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_HE.txt" t="Include" />
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_NE.txt" t="Include" />
+          <e p="180613_【初恋】ちとアキ1stスクリプト_BGM対応済_プロローグ.txt" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="QitzADVEngine.sln" t="IncludeFlat" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_QitzADVEngine.1014603256.00" t="ExcludeRecursive" />
+  </component>
+</project>

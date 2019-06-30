@@ -28,5 +28,13 @@ namespace Qitz.ADVGame
         WAIT,
         
     }
+
+    public enum Character
+    {
+        NONE,
+    }
+    
+    
+    
 }
 
