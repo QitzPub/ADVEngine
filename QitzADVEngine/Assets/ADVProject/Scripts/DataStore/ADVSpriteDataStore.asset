@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95be340f1f40548e58751b102d5f5aa6, type: 3}
+  m_Name: ADVSpriteDataStore
+  m_EditorClassIdentifier: 
+  bodySpriteList:
+  - bodySprite: {fileID: 0}
+    character: 1
+    costume: 1
+  faceSpriteList:
+  - bodySprite: {fileID: 0}
+    character: 1
+    costume: 2
+  backgroundSpriteList:
+  - sprite: {fileID: 0}

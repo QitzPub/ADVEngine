@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ecfc72d-a9e5-459d-adbe-db759d733564" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.QitzADVEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QitzADVEngine/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/ADVSpriteDataStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/ADVSpriteDataStore.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/IADVSpriteDataStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/IADVSpriteDataStore.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ADVProject/Scripts/Enums/ADVGameEnums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ADVProject/Scripts/Enums/ADVGameEnums.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AdvScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AdvScene.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +18,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/GameSystemInitializer/GameSystemInitializer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="75">
               <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="1" />
               <folding>
                 <marker date="1560148122301" expanded="true" signature="6:107" ph="..." />
@@ -47,78 +47,103 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/ArchitectureCore/Transmitter/PrefabFolder.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
-              <folding>
-                <marker date="1560144875000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1560144875000" expanded="true" signature="111:2976" ph="{...}" />
-                <marker date="1560144875000" expanded="true" signature="143:2974" ph="{...}" />
-                <marker date="1560144875000" expanded="true" signature="247:524" ph="{...}" />
-                <marker date="1560144875000" expanded="true" signature="604:833" ph="{...}" />
-                <marker date="1560144875000" expanded="true" signature="928:1205" ph="{...}" />
-                <marker date="1560144875000" expanded="true" signature="1286:1525" ph="{...}" />
-                <marker date="1560144875000" expanded="true" signature="1588:1783" ph="{...}" />
-                <marker date="1560144875000" expanded="true" signature="1888:2222" ph="{...}" />
-                <marker date="1560144875000" expanded="true" signature="2313:2628" ph="{...}" />
-                <marker date="1560144875000" expanded="true" signature="2701:2968" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/ValueObjects/IADVSpriteVO.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-              <folding>
-                <marker date="1560148640245" expanded="true" signature="42:124" ph="{...}" />
-                <marker date="1560148640245" expanded="true" signature="78:122" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/IADVSpriteDataStore.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="105">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
               <folding>
-                <marker date="1561881126452" expanded="true" signature="57:275" ph="{...}" />
-                <marker date="1561881126452" expanded="true" signature="101:272" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/ADVSpriteDataStore.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-              <folding>
-                <marker date="1561881697506" expanded="true" signature="6:123" ph="..." />
-                <marker date="1561881697506" expanded="true" signature="147:607" ph="{...}" />
-                <marker date="1561881697506" expanded="true" signature="218:410" ph="{...}" />
-                <marker date="1561881697506" expanded="true" signature="469:595" ph="{...}" />
+                <marker date="1561892960026" expanded="true" signature="57:295" ph="{...}" />
+                <marker date="1561892960026" expanded="true" signature="101:292" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/ADVSpriteDataStore.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <marker date="1561893373858" expanded="true" signature="6:143" ph="..." />
+                <marker date="1561893373858" expanded="true" signature="167:2154" ph="{...}" />
+                <marker date="1561893373858" expanded="true" signature="238:878" ph="{...}" />
+                <marker date="1561893373858" expanded="true" signature="938:1020" ph="{...}" />
+                <marker date="1561893373858" expanded="true" signature="1108:1412" ph="{...}" />
+                <marker date="1561893373858" expanded="true" signature="1470:1558" ph="{...}" />
+                <marker date="1561893373858" expanded="true" signature="1650:1969" ph="{...}" />
+                <marker date="1561893373858" expanded="true" signature="2038:2147" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Editor/Resources/CostumeList.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="5" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Editor/Resources/NameList.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="6" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Enums/ADVGameEnums.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-92">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="60">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="26" />
               <folding>
-                <marker date="1561882707619" expanded="true" signature="24:485" ph="{...}" />
-                <marker date="1561882707619" expanded="true" signature="53:157" ph="{...}" />
-                <marker date="1561882707619" expanded="true" signature="184:415" ph="{...}" />
-                <marker date="1561882707619" expanded="true" signature="442:468" ph="{...}" />
+                <marker date="1561892123890" expanded="true" signature="24:730" ph="{...}" />
+                <marker date="1561892123890" expanded="true" signature="53:157" ph="{...}" />
+                <marker date="1561892123890" expanded="true" signature="184:415" ph="{...}" />
+                <marker date="1561892123890" expanded="true" signature="442:571" ph="{...}" />
+                <marker date="1561892123890" expanded="true" signature="596:713" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Editor/MacroLoader.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="24" />
+              <folding>
+                <marker date="1561863911008" expanded="false" signature="6:133" ph="..." />
+                <marker date="1561863911008" expanded="true" signature="174:4586" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="658:715" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="779:1066" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="1092:3112" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="1217:1445" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="1483:2057" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="2181:2442" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="2244:2346" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="2382:2432" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="2482:2761" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="2539:2647" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="2686:2751" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="2798:3065" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="2852:2954" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="2993:3055" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="3182:3452" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="3322:3446" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="3363:3436" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="3525:3950" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="3624:3868" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="3713:3767" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="3987:4584" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="4095:4345" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="4113:4335" ph="{...}" />
+                <marker date="1561863911008" expanded="true" signature="4156:4285" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -141,7 +166,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/ValueObjects/ICaracterVO.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="60">
               <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
               <folding>
                 <marker date="1560919721570" expanded="true" signature="23:615" ph="{...}" />
@@ -155,6 +180,12 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>NameList</find>
+      <find>nameList</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -166,6 +197,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/IADVSpriteDataStore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/ValueObjects/ICaracterVO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/ValueObjects/IADVSpriteVO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Editor/MacroLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Enums/ADVGameEnums.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Model/CharacterVO.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -173,9 +205,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/ADVProject/Scripts/View/AdvView.cs" />
+        <option value="$PROJECT_DIR$/Assets/ADVProject/Scripts/Enums/ADVGameEnums.cs" />
         <option value="$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/IADVSpriteDataStore.cs" />
         <option value="$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/ADVSpriteDataStore.cs" />
-        <option value="$PROJECT_DIR$/Assets/ADVProject/Scripts/Enums/ADVGameEnums.cs" />
       </list>
     </option>
   </component>
@@ -186,7 +218,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -200,11 +232,11 @@
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,11 +291,12 @@
       <workItem from="1561877377824" duration="434000" />
       <workItem from="1561878433985" duration="862000" />
       <workItem from="1561880828292" duration="1658000" />
+      <workItem from="1561891145172" duration="2113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3067000" />
+    <option name="totallyTimeSpent" value="5180000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -275,14 +308,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="825" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08194444" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3713528" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3713528" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -321,9 +354,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/ValueObjects/ICaracterVO.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <marker date="1560919721570" expanded="true" signature="23:615" ph="{...}" />
+            <marker date="1560919721570" expanded="true" signature="58:325" ph="{...}" />
+            <marker date="1560919721570" expanded="true" signature="379:613" ph="{...}" />
+            <marker date="1560919721570" expanded="true" signature="508:544" ph="/* フェードイン ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Model/CharacterVO.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <marker date="1560919721560" expanded="false" signature="6:78" ph="..." />
+            <marker date="1560919721560" expanded="true" signature="102:487" ph="{...}" />
+            <marker date="1560919721560" expanded="true" signature="147:485" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/GameSystemInitializer/GameSystemInitializer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="1" />
           <folding>
             <marker date="1560148122301" expanded="true" signature="6:107" ph="..." />
@@ -336,7 +394,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ArchitectureCore/Transmitter/PrefabFolder.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="30">
           <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
           <folding>
             <marker date="1560144875000" expanded="false" signature="6:78" ph="..." />
@@ -354,6 +412,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/ValueObjects/IADVSpriteVO.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <marker date="1560148640245" expanded="true" signature="42:124" ph="{...}" />
+            <marker date="1560148640245" expanded="true" signature="78:122" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Editor/MacroLoader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <marker date="1561863911008" expanded="false" signature="6:133" ph="..." />
+            <marker date="1561863911008" expanded="true" signature="174:4586" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="658:715" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="779:1066" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="1092:3112" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="1217:1445" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="1483:2057" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="2181:2442" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="2244:2346" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="2382:2432" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="2482:2761" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="2539:2647" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="2686:2751" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="2798:3065" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="2852:2954" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="2993:3055" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="3182:3452" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="3322:3446" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="3363:3436" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="3525:3950" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="3624:3868" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="3713:3767" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="3987:4584" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="4095:4345" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="4113:4335" ph="{...}" />
+            <marker date="1561863911008" expanded="true" signature="4156:4285" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Editor/Resources/NameList.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Editor/Resources/CostumeList.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/View/AdvView.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -368,75 +486,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/IADVSpriteDataStore.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Enums/ADVGameEnums.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="60">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="26" />
           <folding>
-            <marker date="1561881126452" expanded="true" signature="57:275" ph="{...}" />
-            <marker date="1561881126452" expanded="true" signature="101:272" ph="{...}" />
+            <marker date="1561892123890" expanded="true" signature="24:730" ph="{...}" />
+            <marker date="1561892123890" expanded="true" signature="53:157" ph="{...}" />
+            <marker date="1561892123890" expanded="true" signature="184:415" ph="{...}" />
+            <marker date="1561892123890" expanded="true" signature="442:571" ph="{...}" />
+            <marker date="1561892123890" expanded="true" signature="596:713" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/ValueObjects/IADVSpriteVO.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/IADVSpriteDataStore.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        <state relative-caret-position="105">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
           <folding>
-            <marker date="1560148640245" expanded="true" signature="42:124" ph="{...}" />
-            <marker date="1560148640245" expanded="true" signature="78:122" ph="{...}" />
+            <marker date="1561892960026" expanded="true" signature="57:295" ph="{...}" />
+            <marker date="1561892960026" expanded="true" signature="101:292" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/DataStore/ADVSpriteDataStore.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="99">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
-            <marker date="1561881697506" expanded="true" signature="6:123" ph="..." />
-            <marker date="1561881697506" expanded="true" signature="147:607" ph="{...}" />
-            <marker date="1561881697506" expanded="true" signature="218:410" ph="{...}" />
-            <marker date="1561881697506" expanded="true" signature="469:595" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Model/CharacterVO.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <marker date="1560919721560" expanded="false" signature="6:78" ph="..." />
-            <marker date="1560919721560" expanded="true" signature="102:487" ph="{...}" />
-            <marker date="1560919721560" expanded="true" signature="147:485" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/ValueObjects/ICaracterVO.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <marker date="1560919721570" expanded="true" signature="23:615" ph="{...}" />
-            <marker date="1560919721570" expanded="true" signature="58:325" ph="{...}" />
-            <marker date="1560919721570" expanded="true" signature="379:613" ph="{...}" />
-            <marker date="1560919721570" expanded="true" signature="508:544" ph="/* フェードイン ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ADVProject/Scripts/Enums/ADVGameEnums.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <marker date="1561882707619" expanded="true" signature="24:485" ph="{...}" />
-            <marker date="1561882707619" expanded="true" signature="53:157" ph="{...}" />
-            <marker date="1561882707619" expanded="true" signature="184:415" ph="{...}" />
-            <marker date="1561882707619" expanded="true" signature="442:468" ph="{...}" />
+            <marker date="1561893373858" expanded="true" signature="6:143" ph="..." />
+            <marker date="1561893373858" expanded="true" signature="167:2154" ph="{...}" />
+            <marker date="1561893373858" expanded="true" signature="238:878" ph="{...}" />
+            <marker date="1561893373858" expanded="true" signature="938:1020" ph="{...}" />
+            <marker date="1561893373858" expanded="true" signature="1108:1412" ph="{...}" />
+            <marker date="1561893373858" expanded="true" signature="1470:1558" ph="{...}" />
+            <marker date="1561893373858" expanded="true" signature="1650:1969" ph="{...}" />
+            <marker date="1561893373858" expanded="true" signature="2038:2147" ph="{...}" />
           </folding>
         </state>
       </provider>

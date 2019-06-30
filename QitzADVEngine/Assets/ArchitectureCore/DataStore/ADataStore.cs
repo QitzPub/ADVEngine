@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Qitz.ArchitectureCore
 {
-    public abstract class ADataStore 
+    public abstract class ADataStore:ScriptableObject
     {
     }
 }

@@ -4,8 +4,8 @@ namespace Qitz.ADVGame
 {
     public interface IADVSpriteDataStore 
     {
-        List<IADVSpriteVO> BodySpriteList { get; }
-        List<IADVSpriteVO> FaceSpriteList { get; }
+        List<ICharacterBodySpriteVO> BodySpriteList { get; }
+        List<ICharacterFaceSpriteVO> FaceSpriteList { get; }
         List<IADVSpriteVO> BackgroundSpriteList { get; }
     }
 
