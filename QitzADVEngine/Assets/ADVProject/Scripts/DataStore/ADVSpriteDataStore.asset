@@ -13,12 +13,246 @@ MonoBehaviour:
   m_Name: ADVSpriteDataStore
   m_EditorClassIdentifier: 
   bodySpriteList:
-  - bodySprite: {fileID: 0}
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
     character: 1
     costume: 1
-  faceSpriteList:
-  - bodySprite: {fileID: 0}
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
     character: 1
     costume: 2
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 1
+    costume: 3
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 1
+    costume: 4
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 1
+    costume: 5
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 1
+    costume: 6
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 2
+    costume: 1
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 2
+    costume: 2
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 2
+    costume: 3
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 2
+    costume: 4
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 2
+    costume: 5
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 2
+    costume: 6
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 3
+    costume: 1
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 3
+    costume: 2
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 3
+    costume: 3
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 3
+    costume: 4
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 3
+    costume: 5
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 3
+    costume: 6
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 4
+    costume: 1
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 4
+    costume: 2
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 4
+    costume: 3
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 4
+    costume: 4
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 4
+    costume: 5
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 4
+    costume: 6
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 5
+    costume: 1
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 5
+    costume: 2
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 5
+    costume: 3
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 5
+    costume: 4
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 5
+    costume: 5
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 5
+    costume: 6
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 6
+    costume: 1
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 6
+    costume: 2
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 6
+    costume: 3
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 6
+    costume: 4
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 6
+    costume: 5
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 6
+    costume: 6
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 7
+    costume: 1
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 7
+    costume: 2
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 7
+    costume: 3
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 7
+    costume: 4
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 7
+    costume: 5
+  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+    character: 7
+    costume: 6
+  faceSpriteList:
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 1
+    expression: 1
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 1
+    expression: 2
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 1
+    expression: 3
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 1
+    expression: 4
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 1
+    expression: 5
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 2
+    expression: 1
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 2
+    expression: 2
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 2
+    expression: 3
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 2
+    expression: 4
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 2
+    expression: 5
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 3
+    expression: 1
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 3
+    expression: 2
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 3
+    expression: 3
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 3
+    expression: 4
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 3
+    expression: 5
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 4
+    expression: 1
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 4
+    expression: 2
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 4
+    expression: 3
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 4
+    expression: 4
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 4
+    expression: 5
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 5
+    expression: 1
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 5
+    expression: 2
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 5
+    expression: 3
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 5
+    expression: 4
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 5
+    expression: 5
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 6
+    expression: 1
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 6
+    expression: 2
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 6
+    expression: 3
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 6
+    expression: 4
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 6
+    expression: 5
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 7
+    expression: 1
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 7
+    expression: 2
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 7
+    expression: 3
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 7
+    expression: 4
+  - faceSprite: {fileID: 21300000, guid: 47298dbb3c8a04570af2d9daca103a48, type: 3}
+    character: 7
+    expression: 5
   backgroundSpriteList:
-  - sprite: {fileID: 0}
+  - sprite: {fileID: 21300000, guid: b9b20ca444c014fd49706ad72d4736b3, type: 3}
+  - sprite: {fileID: 21300000, guid: 7471bd26532af4af6af329a7536cb7f6, type: 3}
+  - sprite: {fileID: 21300000, guid: 885ae27a809c14642814aec1f6725dc2, type: 3}
+  - sprite: {fileID: 21300000, guid: 325eb9c4a53b346319fbd9a76a775fd2, type: 3}
+  - sprite: {fileID: 21300000, guid: 2c21a2386c6bf486dadb1ff07bf4e3d8, type: 3}
+  - sprite: {fileID: 21300000, guid: f6a3f4ce1f65f46438471932774117ac, type: 3}
+  - sprite: {fileID: 21300000, guid: 4b1561be2c138482fa3732cbc417b93e, type: 3}
+  - sprite: {fileID: 21300000, guid: 4a78b7333d02a4c089350d0173cb4501, type: 3}
+  - sprite: {fileID: 21300000, guid: 50af7187c01b24781ba9554ae8605ee2, type: 3}
+  - sprite: {fileID: 21300000, guid: 8d8e8cfeafa124393a853a28c6e1d694, type: 3}

@@ -15,7 +15,7 @@ namespace Qitz.ADVGame
 
         public List<ICharacterFaceSpriteVO> FaceSpriteList =>
             faceSpriteList.Select(fs => (ICharacterFaceSpriteVO) fs).ToList();
-        [SerializeField] private List<CharacterBodySpriteVO> faceSpriteList;
+        [SerializeField] private List<CharacterFaceSpriteVO> faceSpriteList;
         public List<IADVSpriteVO> BackgroundSpriteList => backgroundSpriteList.Select(bs=>(IADVSpriteVO)bs).ToList();
         [SerializeField] private List<ADVSpriteVO> backgroundSpriteList;
     }
