@@ -8,7 +8,7 @@ namespace Qitz.ArchitectureCore
     {
     }
 
-    public abstract class ARepository : IRepository
+    public abstract class ARepository :ScriptableObject,IRepository
     {
     }
 }

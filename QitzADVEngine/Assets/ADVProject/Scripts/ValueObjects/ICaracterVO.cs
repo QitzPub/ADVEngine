@@ -6,14 +6,23 @@ namespace Qitz.ADVGame
         string Name { get; }
 
         Expression Expression { get; }
+        Character Character { get; }
+        Costume Costume { get; }
 
         string SpriteBodyName { get; }
+
+        ICharacterBodySpriteVO CharacterBodySpriteVO { get; }
+        ICharacterFaceSpriteVO FaceSpriteVO { get; }
 
         string SpriteFaceName { get; }
         
         CharacterEffectType CharacterEffectType { get; }
-        
+
+
+
         int ShowTime { get; }
+
+        void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore);
 
     }
 

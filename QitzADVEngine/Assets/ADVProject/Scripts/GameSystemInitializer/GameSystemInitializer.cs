@@ -11,9 +11,8 @@ namespace Qitz.ADVGame
         [RuntimeInitializeOnLoadMethod]
         static void Initialize()
         {
-            var ga = new GameObject();
-            PrefabFolder.ResourcesLoadInstantiateTo("ADVGameController", ga.transform.parent);
-            Object.Destroy(ga);
+            var ga = PrefabFolder.ResourcesLoadInstantiateTo("ADVGameController");
+            Object.DontDestroyOnLoad(ga);
         }
     }
 }

@@ -5,11 +5,27 @@ namespace Qitz.ADVGame
     public enum Expression
     {
         NONE,
-        NORMAL,
-        LAUGH,
-        ANGER,
-        DELIGHT,
-        GRIEF,
+        真顔,
+        悲しみ,
+        真顔眼鏡,
+        半目,
+        半目眼鏡,
+        微笑,
+        笑顔,
+        微笑眼鏡,
+        驚き,
+        微笑照れ,
+        半目照れ,
+        ふてくされ照れ,
+        驚き照れ,
+        真顔照れ,
+        笑顔照れ,
+        ふてくされ,
+        ときめき,
+        怒り,
+        怒り照れ,
+        笑顔眼鏡,
+        目閉じ,
     }
     public enum EffectType
     {
@@ -44,12 +60,12 @@ namespace Qitz.ADVGame
     public enum Costume
     {
         NONE,
-        制服_冬服,
-        私服_部屋着,
-        私服_コート,
+        制服冬服,
+        私服部屋着,
+        私服コート,
         冬服,
-        私服_冬服,
-        制服_ジャージ,
+        私服冬服,
+        制服ジャージ,
     }
     
     

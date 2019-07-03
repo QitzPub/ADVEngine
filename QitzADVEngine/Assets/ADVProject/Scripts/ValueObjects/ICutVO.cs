@@ -17,6 +17,8 @@ namespace Qitz.ADVGame
 
         List<IChoiceVO> Choices { get; }
 
+        void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore);
+
     }
 
 }

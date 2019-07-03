@@ -64,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/SampleMacros/180613_【初恋】ちとアキ1stスクリプト_BGM対応済_3章.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="514" column="16" lean-forward="true" selection-start-line="514" selection-start-column="10" selection-end-line="514" selection-end-column="16" />
+            <state relative-caret-position="135">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -175,6 +175,8 @@
     <findStrings>
       <find>NameList</find>
       <find>nameList</find>
+      <find>036001</find>
+      <find>bg file=</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -287,12 +289,12 @@
       <workItem from="1561891145172" duration="2377000" />
       <workItem from="1561962731362" duration="98000" />
       <workItem from="1562069675166" duration="110000" />
-      <workItem from="1562072573613" duration="227000" />
+      <workItem from="1562072573613" duration="592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5889000" />
+    <option name="totallyTimeSpent" value="6244000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -305,7 +307,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08194444" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -513,6 +514,7 @@
           <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding>
             <marker date="1560919721560" expanded="false" signature="6:78" ph="..." />
+            <marker date="1560919721560" expanded="true" signature="102:487" ph="{...}" />
             <marker date="1560919721560" expanded="true" signature="147:485" ph="{...}" />
           </folding>
         </state>
@@ -537,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/SampleMacros/180613_【初恋】ちとアキ1stスクリプト_BGM対応済_3章.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="529" column="9" selection-start-line="529" selection-start-column="1" selection-end-line="529" selection-end-column="9" />
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>

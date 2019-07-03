@@ -1,4 +1,7 @@
 ﻿
+using UnityEngine;
+using UnityEngine.UI;
+
 namespace Qitz.ADVGame
 {
     public interface IBackgroundVO
@@ -6,6 +9,10 @@ namespace Qitz.ADVGame
         string Name { get; }
 
         string SpriteBackGroundName { get; }
+
+        Sprite SpriteBackGround { get; }
+
+        void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore);
 
     }
 }

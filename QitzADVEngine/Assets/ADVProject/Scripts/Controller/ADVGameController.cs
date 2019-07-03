@@ -11,12 +11,13 @@ namespace Qitz.ADVGame
 
     public class ADVGameController : AController<ADVGameRepository>, IADVGameController
     {
+        [SerializeField]
         ADVGameRepository repository;
         protected override ADVGameRepository Repository { get { return repository; } }
 
         public void Initialize(string macro)
         {
-            this.repository = new ADVGameRepository(macro);
+            this.repository.Initialize(macro);
         }
 
     }

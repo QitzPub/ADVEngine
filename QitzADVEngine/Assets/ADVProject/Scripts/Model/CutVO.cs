@@ -6,6 +6,8 @@ namespace Qitz.ADVGame
 {
     public class CutVO : ICutVO
     {
+        IADVSpriteDataStore aDVSpriteDataStore;
+
         public IWindowVO WindowVO { get; set; }
 
         public string BgmID { get; set; }
@@ -17,5 +19,12 @@ namespace Qitz.ADVGame
         public List<ICaracterVO> CaracterVO { get; set; }
 
         public List<IChoiceVO> Choices { get; set; }
+
+        public void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore)
+        {
+            this.aDVSpriteDataStore = aDVSpriteDataStore;
+            CaracterVO.ForEach(cv => cv.SetDataStore(aDVSpriteDataStore));
+            BackgroundVO.SetDataStore(aDVSpriteDataStore);
+        }
     }
 }
