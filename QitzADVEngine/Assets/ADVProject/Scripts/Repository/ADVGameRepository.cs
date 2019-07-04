@@ -10,6 +10,9 @@ namespace Qitz.ADVGame
     public class ADVGameRepository : ARepository, IADVGameRepository
     {
         ADVGameDataStore aDVGameDataStore;
+
+        public IADVGameDataStore ADVGameDataStore => aDVGameDataStore;
+
         [SerializeField]
         ADVSpriteDataStore aDVSpriteDataStore;
 
