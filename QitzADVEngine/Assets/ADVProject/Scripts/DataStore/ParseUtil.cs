@@ -40,7 +40,7 @@ public sealed class ParseUtil
         while (m_reader.Peek() != -1)
         {
             CutVO cutVo = new CutVO();
-            cutVo.CaracterVO = new List<ICaracterVO>();
+            cutVo.Caracters = new List<ICaracterVO>();
             cutVo.Effects = new List<IEffectVO>();
             cutVo.BackgroundVO = new BackgroundVO();
             cutVo.Choices = new List<IChoiceVO>();
@@ -418,7 +418,7 @@ public sealed class ParseUtil
 
                     m_reader.Read();
                 }
-                cutVo.CaracterVO.Add(cVo);
+                cutVo.Caracters.Add(cVo);
             }
 
             parsing = false;

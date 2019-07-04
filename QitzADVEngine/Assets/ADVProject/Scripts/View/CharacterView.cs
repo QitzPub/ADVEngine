@@ -12,14 +12,9 @@ namespace Qitz.ADVGame
         [SerializeField]
         Image characterFace;
 
-        public override void SetCaracterVO(ICaracterVO vo)
+        public override void SetCaracterVO(List<ICaracterVO> vo)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public override void SetEffect(IEffectVO vo)
-        {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Qitz.ADVGame
     public interface IADVGameController
     {
         IObservable<Unit> ASVScenarioEndObservable { get; }
-        IObservable<ICutVO> AdvCutObservable { get; }
+        IObservable<ICutVO> ADVCutObservable { get; }
         void Initialize(string macro);
         void Next();
     }
@@ -21,7 +21,7 @@ namespace Qitz.ADVGame
         ADVGameRepository repository;
         protected override ADVGameRepository Repository { get { return repository; } }
         Subject<ICutVO> advCutSunject = new Subject<ICutVO>();
-        public IObservable<ICutVO> AdvCutObservable => advCutSunject;
+        public IObservable<ICutVO> ADVCutObservable => advCutSunject;
         Subject<Unit> advScenarioEndSubject = new Subject<Unit>();
         public IObservable<Unit> ASVScenarioEndObservable => advScenarioEndSubject;
         List<ICutVO> cutVOs => repository.ADVGameDataStore.cutVOs;

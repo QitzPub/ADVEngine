@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine.UI;
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace Qitz.ADVGame
 {
@@ -11,12 +12,12 @@ namespace Qitz.ADVGame
 
         public override void SetBackgroundVO(IBackgroundVO vo)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
-        public override void SetEffect(IEffectVO vo)
+        public override void SetEffect(List<IEffectVO> vo)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

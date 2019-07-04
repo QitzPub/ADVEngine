@@ -13,7 +13,7 @@ namespace Qitz.ADVGame
 
         IBackgroundVO BackgroundVO { get; }
 
-        List<ICaracterVO> CaracterVO { get; }
+        List<ICaracterVO> Caracters { get; }
 
         List<IChoiceVO> Choices { get; }
 

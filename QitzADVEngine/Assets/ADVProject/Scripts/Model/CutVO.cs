@@ -16,14 +16,14 @@ namespace Qitz.ADVGame
 
         public IBackgroundVO BackgroundVO { get; set; }
 
-        public List<ICaracterVO> CaracterVO { get; set; }
+        public List<ICaracterVO> Caracters { get; set; }
 
         public List<IChoiceVO> Choices { get; set; }
 
         public void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore)
         {
             this.aDVSpriteDataStore = aDVSpriteDataStore;
-            CaracterVO.ForEach(cv => cv.SetDataStore(aDVSpriteDataStore));
+            Caracters.ForEach(cv => cv.SetDataStore(aDVSpriteDataStore));
             BackgroundVO.SetDataStore(aDVSpriteDataStore);
         }
     }

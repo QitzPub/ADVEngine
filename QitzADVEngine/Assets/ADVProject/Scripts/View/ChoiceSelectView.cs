@@ -18,12 +18,12 @@ namespace Qitz.ADVGame
             background.gameObject.SetActive(false);
         }
 
-        public override void SetChoices(List<string> choices)
+        public override void SetChoices(List<IChoiceVO> choices)
         {
             int i = 0;
             foreach (var t in choices)
             {
-                selectItems[i].SetText(t);
+                selectItems[i].SetText(choices[i].text);
                 i++;
             }
         }

@@ -46,7 +46,7 @@ namespace Qitz.ADVGame
                     Debug.Log(eVo.EffectType);
                 }
 
-                foreach (var VARIABLE in cVo.CaracterVO)
+                foreach (var VARIABLE in cVo.Caracters)
                 {
                     Debug.Log("Body:" + VARIABLE.SpriteBodyName);
                     Debug.Log("Face:" + VARIABLE.SpriteFaceName);
