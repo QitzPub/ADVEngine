@@ -17,7 +17,11 @@ namespace Qitz.ADVGame
             for (int i = 0; i < vo.Count; i++)
             {
                 characterBodys[i].sprite = vo[i].BodySprite;
+                characterBodys[i].SetNativeSize();
+                characterBodys[i].transform.localPosition = vo[i].BodyPostion;
                 characterFaces[i].sprite = vo[i].FaceSprite;
+                characterFaces[i].SetNativeSize();
+                characterFaces[i].transform.localPosition = vo[i].FacePostion;
             }
 
             //throw new System.NotImplementedException();

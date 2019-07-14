@@ -23,6 +23,9 @@ namespace Qitz.ADVGame
         Sprite BodySprite { get; }
         Sprite FaceSprite { get; }
 
+        Vector2 BodyPostion { get; }
+        Vector2 FacePostion { get; }
+
         int ShowTime { get; }
 
         void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore);

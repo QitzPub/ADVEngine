@@ -57,6 +57,10 @@ namespace Qitz.ADVGame
             }
         }
 
+        public Vector2 BodyPostion => aDVSpriteDataStore.CharacterBodyPostionList.FirstOrDefault(cbp=>cbp.Character== Character).Postion;
+
+        public Vector2 FacePostion => aDVSpriteDataStore.CharacterFacePostionList.FirstOrDefault(cfp => cfp.Character == Character).Postion;
+
         public void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore)
         {
             this.aDVSpriteDataStore = aDVSpriteDataStore;

@@ -7,6 +7,8 @@ namespace Qitz.ADVGame
         List<ICharacterBodySpriteVO> BodySpriteList { get; }
         List<ICharacterFaceSpriteVO> FaceSpriteList { get; }
         List<IADVSpriteVO> BackgroundSpriteList { get; }
+        List<CharacterPostionVO> CharacterBodyPostionList { get; }
+        List<CharacterPostionVO> CharacterFacePostionList { get; }
     }
 
 }
