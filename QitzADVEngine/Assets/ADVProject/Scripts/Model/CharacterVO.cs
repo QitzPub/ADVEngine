@@ -24,7 +24,15 @@ namespace Qitz.ADVGame
 
         public Character Character => (Character)Enum.Parse(typeof(Character), Name, true);
 
-        public Costume Costume => (Costume)Enum.Parse(typeof(Costume), SpriteBodyName.Replace("(","").Replace(")", ""), true);
+        public Costume Costume
+        {
+            get
+            {
+                if (SpriteBodyName == null) return Costume.NONE;
+                return (Costume)Enum.Parse(typeof(Costume), SpriteBodyName.Replace("(", "").Replace(")", ""), true);
+            }
+        }
+
 
         public ICharacterBodySpriteVO CharacterBodySpriteVO => aDVSpriteDataStore.BodySpriteList.FirstOrDefault(bs=>bs.Character== this.Character &&bs.Costume== this.Costume);
 
@@ -33,6 +41,10 @@ namespace Qitz.ADVGame
         public Sprite BodySprite {
         get {
                 var bs = this.aDVSpriteDataStore.BodySpriteList.FirstOrDefault(b=>b.Character== Character && b.Costume== Costume);
+                if (bs == null)
+                {
+                    return this.aDVSpriteDataStore.BodySpriteList.FirstOrDefault(b => b.Character == Character).Sprite;
+                }
                 return bs.Sprite;
             }
         }

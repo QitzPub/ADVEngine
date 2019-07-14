@@ -15,8 +15,8 @@ A few days after the gokon--.
 【女子生徒１】
 Hi everyone, sorry for causing trouble last week.
 
-[森若ちとせ 出 顔 制服(冬服) tb 笑顔 time=0]
-【森若ちとせ】
+[リリファ 出 顔 通常服 tb 笑顔 time=0]
+【リリファ】
 Sure!
 
 Akira and I decided to go to karaoke with the girls.
@@ -24,17 +24,16 @@ Akira and I decided to go to karaoke with the girls.
 【女子生徒１】
 Hey Akira, want to do the first song?
 
-[藤枝アキラ 出 制服(冬服) up 半目 time=0]
-【藤枝アキラ】
+[アイン 出 通常服 up 真顔 time=0]
+【アイン】
 Mmmm.
 
-[森若ちとせ 真顔]
-【森若ちとせ】
+[リリファ 真顔]
+【リリファ】
 (Is Akira a little nervous?)
 
 [bgm file="bgm002_a.wav"]
 ♪～
-
 
 [bg file="034003.jpg"]
 [messageon]
