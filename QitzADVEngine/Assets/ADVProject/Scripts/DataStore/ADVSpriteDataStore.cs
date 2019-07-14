@@ -31,7 +31,7 @@ namespace Qitz.ADVGame
     {
         public Sprite Sprite => bodySprite;
         [SerializeField] private Sprite bodySprite;
-        public Character Character => Character;
+        public Character Character => character;
         [SerializeField] private Character character;
         public Costume Costume => costume;
         [SerializeField] private Costume costume;
@@ -48,7 +48,7 @@ namespace Qitz.ADVGame
     {
         public Sprite Sprite => faceSprite;
         [SerializeField] private Sprite faceSprite;
-        public Character Character => Character;
+        public Character Character => character;
         [SerializeField] private Character character;
         public Expression Expression => expression;
         [SerializeField] private Expression expression;

@@ -8,12 +8,18 @@ namespace Qitz.ADVGame
     public class CharacterView : ACharacterView
     {
         [SerializeField]
-        Image characterBody;
+        List<Image> characterBodys;
         [SerializeField]
-        Image characterFace;
+        List<Image> characterFaces;
 
         public override void SetCaracterVO(List<ICaracterVO> vo)
         {
+            for (int i = 0; i < vo.Count; i++)
+            {
+                characterBodys[i].sprite = vo[i].BodySprite;
+                characterFaces[i].sprite = vo[i].FaceSprite;
+            }
+
             //throw new System.NotImplementedException();
         }
     }

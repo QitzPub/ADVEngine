@@ -67,7 +67,7 @@ MonoBehaviour:
   - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
     character: 3
     costume: 6
-  - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}
+  - bodySprite: {fileID: 21300000, guid: cca9f78f421c64dcc9edaaf6309b0315, type: 3}
     character: 4
     costume: 1
   - bodySprite: {fileID: 21300000, guid: bb2059634ff734ab881d566ab93987e3, type: 3}

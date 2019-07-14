@@ -30,6 +30,21 @@ namespace Qitz.ADVGame
 
         public ICharacterFaceSpriteVO FaceSpriteVO => aDVSpriteDataStore.FaceSpriteList.FirstOrDefault(fs=>fs.Character== this.Character&&fs.Expression== this.Expression);
 
+        public Sprite BodySprite {
+        get {
+                var bs = this.aDVSpriteDataStore.BodySpriteList.FirstOrDefault(b=>b.Character== Character && b.Costume== Costume);
+                return bs.Sprite;
+            }
+        }
+        public Sprite FaceSprite
+        {
+            get
+            {
+                var fs = this.aDVSpriteDataStore.FaceSpriteList.FirstOrDefault(f => f.Character == Character && f.Expression == Expression);
+                return fs.Sprite;
+            }
+        }
+
         public void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore)
         {
             this.aDVSpriteDataStore = aDVSpriteDataStore;

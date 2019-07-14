@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5da3436eee914394bbe1a4380e1bc60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sampleMacro: {fileID: 4900000, guid: ea82de3cb8087df45a1d20c279de8870, type: 3}
+  sampleMacro: {fileID: 4900000, guid: 4409762a3e90f4fb1a98609536fbdc22, type: 3}
 --- !u!4 &269972731
 Transform:
   m_ObjectHideFlags: 0
@@ -1839,5 +1839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: accf7c58cb2444db69cda829c9658e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterBody: {fileID: 345542104}
-  characterFace: {fileID: 1893399477}
+  characterBodys:
+  - {fileID: 345542104}
+  characterFaces:
+  - {fileID: 1893399477}

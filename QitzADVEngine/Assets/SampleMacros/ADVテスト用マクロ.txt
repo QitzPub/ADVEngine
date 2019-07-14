@@ -1,0 +1,42 @@
+﻿;英語
+;1話
+
+[messageoff]
+[ev file="936030.jpg"]
+[wait keyinput]
+
+[暗転共通]
+
+[bg file="039002.jpg"]
+[messageon]
+[bgm file="bgm008_a.wav"]
+A few days after the gokon--.
+
+【女子生徒１】
+Hi everyone, sorry for causing trouble last week.
+
+[森若ちとせ 出 顔 制服(冬服) tb 笑顔 time=0]
+【森若ちとせ】
+Sure!
+
+Akira and I decided to go to karaoke with the girls.
+
+【女子生徒１】
+Hey Akira, want to do the first song?
+
+[藤枝アキラ 出 制服(冬服) up 半目 time=0]
+【藤枝アキラ】
+Mmmm.
+
+[森若ちとせ 真顔]
+【森若ちとせ】
+(Is Akira a little nervous?)
+
+[bgm file="bgm002_a.wav"]
+♪～
+
+
+[bg file="034003.jpg"]
+[messageon]
+[bgm file="bgm008_d.wav"]
+After Karaoke--.

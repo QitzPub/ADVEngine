@@ -1,4 +1,6 @@
 ﻿
+using UnityEngine;
+
 namespace Qitz.ADVGame
 {
     public interface ICaracterVO
@@ -18,7 +20,8 @@ namespace Qitz.ADVGame
         
         CharacterEffectType CharacterEffectType { get; }
 
-
+        Sprite BodySprite { get; }
+        Sprite FaceSprite { get; }
 
         int ShowTime { get; }
 
