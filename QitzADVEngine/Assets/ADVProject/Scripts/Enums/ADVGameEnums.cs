@@ -27,7 +27,7 @@ namespace Qitz.ADVGame
         笑顔眼鏡,
         目閉じ,
     }
-    public enum EffectType
+    public enum CommandType
     {
         NONE,
         SHACKE,
@@ -35,14 +35,48 @@ namespace Qitz.ADVGame
         BLAKOUT,
         MESSAGEOFF,
         MESSAGEON,
-        HIDE_CARACTER,
+        CARACTER,
         BG,
-        BGM_STOP,
-        BGM_PLAY,
+        BGM,
         SE,
         EV,
         WAIT,
         
+    }
+    public enum CommandValueType
+    {
+        NONE,
+        STOP,
+        FILE,
+        DISAPPEAR,
+        APPEAR,
+        TIME,
+        SHOW_FACE,
+        GO_UP,
+        TB,
+    }
+
+    public enum CommandString
+    {
+        NONE,
+        messageoff,
+        messageon,
+        暗転共通,
+        bg,
+        bgm,
+        wait,
+    }
+    public enum CommandValueString
+    {
+        NONE,
+        stop,
+        file,
+        消,
+        time,
+        出,
+        顔,
+        up,
+        tb,
     }
 
     public enum Character

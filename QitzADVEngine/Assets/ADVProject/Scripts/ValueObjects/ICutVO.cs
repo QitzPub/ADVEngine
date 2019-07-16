@@ -9,7 +9,7 @@ namespace Qitz.ADVGame
 
         string BgmID { get; }
 
-        List<IEffectVO> Effects { get; }
+        List<ICommandWrapVO> Commands { get; }
 
         IBackgroundVO BackgroundVO { get; }
 

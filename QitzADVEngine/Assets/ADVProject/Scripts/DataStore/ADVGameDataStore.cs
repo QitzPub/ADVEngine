@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Qitz.ArchitectureCore;
+using Qitz.ADVGame.ParseUtil;
+
 namespace Qitz.ADVGame
 {
     public interface IADVGameDataStore
@@ -14,12 +16,10 @@ namespace Qitz.ADVGame
 
         public ADVGameDataStore(string macro)
         {
-            //cutVOs = new List<ICutVO>();
-            //※ここにtextmacroをICutVOのリストに変換するロジックなどをいれたりする
-            
-            ParseUtil util = new ParseUtil(macro);
+        
+            QitzADVMacroParseUtil util = new QitzADVMacroParseUtil(macro);
             cutVOs = util.Deserialize();
-            
+
             //デバッグ用にデータ表示
             ShowData();
         }
@@ -33,6 +33,7 @@ namespace Qitz.ADVGame
 
         private void ShowData()
         {
+            int i = 0;
             foreach (CutVO cVo in cutVOs)
             {
                 if (cVo.WindowVO!= null)
@@ -41,9 +42,15 @@ namespace Qitz.ADVGame
                         Debug.Log(cVo.WindowVO.WindowNaviCaracterVO.Name);
                     Debug.Log(cVo.WindowVO.WindowText);
                 }
-                foreach (EffectVO eVo in cVo.Effects)
+                if(cVo.Choices.Count >= 2)
                 {
-                    Debug.Log(eVo.EffectType);
+                    Debug.LogError(cVo.WindowVO.WindowText);
+                    Debug.LogError("=========-"+i);
+                }
+
+                foreach (CommandWrapVO eVo in cVo.Commands)
+                {
+                    Debug.Log(eVo.CommandType);
                 }
 
                 foreach (var VARIABLE in cVo.Caracters)
@@ -60,6 +67,7 @@ namespace Qitz.ADVGame
                 }
                 Debug.Log(("BG:"  +cVo.BackgroundVO.SpriteBackGroundName));
                 Debug.Log(("BGM:"  +cVo.BgmID));
+                i++;
             }
         }
         

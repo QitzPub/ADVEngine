@@ -35,7 +35,7 @@ namespace Qitz.ADVGame
         void UpdateADVViews(ICutVO cutVo)
         {
             _backgroundView.SetBackgroundVO(cutVo.BackgroundVO);
-            _backgroundView.SetEffect(cutVo.Effects);
+            _backgroundView.SetEffect(cutVo.Commands);
             _characterView.SetCaracterVO(cutVo.Caracters);
             _windowView.SetWindowVO(cutVo.WindowVO);
             _choiceSelectView.SetChoices(cutVo.Choices);

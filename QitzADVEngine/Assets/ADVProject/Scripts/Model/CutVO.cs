@@ -8,17 +8,32 @@ namespace Qitz.ADVGame
     {
         IADVSpriteDataStore aDVSpriteDataStore;
 
+        WindowVO windowVO = new WindowVO();
         public IWindowVO WindowVO { get; set; }
 
         public string BgmID { get; set; }
 
-        public List<IEffectVO> Effects { get; set; }
+        List<ICommandWrapVO> commands = new List<ICommandWrapVO>();
+        public List<ICommandWrapVO> Commands => commands;
 
         public IBackgroundVO BackgroundVO { get; set; }
 
         public List<ICaracterVO> Caracters { get; set; }
 
         public List<IChoiceVO> Choices { get; set; }
+
+        public void AddCommand(ICommandWrapVO commandWrapVO)
+        {
+            commands.Add(commandWrapVO);
+        }
+        public void SetWindowCharacterName(string windowCharacterName)
+        {
+            windowVO.SetWindowCharacterName(windowCharacterName);
+        }
+        public void SetWindowText(string windowText)
+        {
+            windowVO.SetWindowText(windowText);
+        }
 
         public void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore)
         {

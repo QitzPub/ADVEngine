@@ -15,7 +15,7 @@ namespace Qitz.ADVGame
             //throw new NotImplementedException();
         }
 
-        public override void SetEffect(List<IEffectVO> vo)
+        public override void SetEffect(List<ICommandWrapVO> vo)
         {
             //throw new NotImplementedException();
         }
