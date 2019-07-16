@@ -33,7 +33,6 @@ public static class ParseCommandList
 		"私服(冬服)",
 		"制服(ジャージ)",
 		"通常服",
-
     };
     
     //TODO 自動生成

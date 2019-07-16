@@ -30,7 +30,10 @@ namespace Qitz.ADVGame.ParseUtil
             foreach (var preCursorCutSet in preCursorCutSets)
             {
                 var cutVO = GetCutVO(preCursorCutSet);
-                cutVOs.Add(cutVO);
+                if (!cutVO.IsEmptyVO)
+                {
+                    cutVOs.Add(cutVO);
+                }
             }
             return cutVOs;
         }
@@ -120,8 +123,10 @@ namespace Qitz.ADVGame.ParseUtil
 
         ADVLineType JudgeAdvMacroLineAttribute(string advMacroLine)
         {
-            string leadString = advMacroLine.Substring(0, 1);
-            string lastString = advMacroLine.Substring(advMacroLine.Length, 1);
+            string leadString = advMacroLine == MacroParseData.EMPTY_WORD 
+                                ? MacroParseData.EMPTY_WORD : advMacroLine.Substring(0, 1);
+            string lastString = advMacroLine == MacroParseData.EMPTY_WORD 
+                                ? MacroParseData.EMPTY_WORD : advMacroLine.Substring(advMacroLine.Length-1, 1);
 
             if (leadString == MacroParseData.COMMENT_START_WORD)
             {
@@ -152,7 +157,6 @@ namespace Qitz.ADVGame.ParseUtil
 
         CommandWrapVO ConvertCommandVOFromCommandMacroLine(string commandMacroLine)
         {
-
             string pureCommandMacroLine = commandMacroLine.Replace(MacroParseData.COMMAND_START_WORD,"").Replace(MacroParseData.COMMAND_END_WORD,"");
             string[] commands = pureCommandMacroLine.Split(MacroParseData.COMMAND_SPLIT_WORD.ToCharArray());
             string leadCommandWord = commands[0];
@@ -206,6 +210,18 @@ namespace Qitz.ADVGame.ParseUtil
             {
                 return new CommandVO(CommandValueType.SHOW_FACE, "");
             }
+            else if (commandValueWord == CommandValueString.keyinput.ToString())
+            {
+                return new CommandVO(CommandValueType.KEY_INPUT, "");
+            }
+            else if (0 <= Array.IndexOf(ParseCommandList.costumeList, commandValueWord))
+            {
+                return new CommandVO(CommandValueType.SET_COSTUME, commandValueWord);
+            }
+            else if (0 <= Array.IndexOf(ParseCommandList.faceList, commandValueWord))
+            {
+                return new CommandVO(CommandValueType.SET_FACE, commandValueWord);
+            }
             else
             {
                 throw new Exception($"想定されていない形式です:{commandValueWord}");
@@ -214,11 +230,11 @@ namespace Qitz.ADVGame.ParseUtil
 
         CommandType GetCommandTypeFromCommandWord(string commandWord)
         {
-            if(commandWord == CommandString.bg.ToString())
+            if (commandWord == CommandString.bg.ToString())
             {
                 return CommandType.BG;
-
-            }else if (commandWord == CommandString.bgm.ToString())
+            }
+            else if (commandWord == CommandString.bgm.ToString())
             {
                 return CommandType.BGM;
             }
@@ -237,8 +253,14 @@ namespace Qitz.ADVGame.ParseUtil
             else if (commandWord == CommandString.暗転共通.ToString())
             {
                 return CommandType.BLAKOUT;
-            }else if(0 <= Array.IndexOf(ParseCommandList.characterList, commandWord)) {
+            }
+            else if (0 <= Array.IndexOf(ParseCommandList.characterList, commandWord))
+            {
                 return CommandType.CARACTER;
+            }
+            else if (commandWord == CommandString.ev.ToString())
+            {
+                return CommandType.EV;
             }
 
             throw new Exception($"想定されないコマンドです:{commandWord}");

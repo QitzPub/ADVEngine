@@ -54,6 +54,9 @@ namespace Qitz.ADVGame
         SHOW_FACE,
         GO_UP,
         TB,
+        KEY_INPUT,
+        SET_COSTUME,
+        SET_FACE,
     }
 
     public enum CommandString
@@ -65,6 +68,7 @@ namespace Qitz.ADVGame
         bg,
         bgm,
         wait,
+        ev,
     }
     public enum CommandValueString
     {
@@ -77,6 +81,7 @@ namespace Qitz.ADVGame
         顔,
         up,
         tb,
+        keyinput,
     }
 
     public enum Character

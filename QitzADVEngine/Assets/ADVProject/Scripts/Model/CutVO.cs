@@ -9,7 +9,7 @@ namespace Qitz.ADVGame
         IADVSpriteDataStore aDVSpriteDataStore;
 
         WindowVO windowVO = new WindowVO();
-        public IWindowVO WindowVO { get; set; }
+        public IWindowVO WindowVO => windowVO;
 
         public string BgmID { get; set; }
 
@@ -20,7 +20,10 @@ namespace Qitz.ADVGame
 
         public List<ICaracterVO> Caracters { get; set; }
 
-        public List<IChoiceVO> Choices { get; set; }
+        List<IChoiceVO> choices = new List<IChoiceVO>();
+        public List<IChoiceVO> Choices => choices;
+
+        public bool IsEmptyVO => commands.Count == 0 && windowVO.WindowCharacterName == "" && windowVO.WindowText == "";
 
         public void AddCommand(ICommandWrapVO commandWrapVO)
         {
