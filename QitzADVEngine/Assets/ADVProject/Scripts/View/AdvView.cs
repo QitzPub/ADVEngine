@@ -34,11 +34,17 @@ namespace Qitz.ADVGame
 
         void UpdateADVViews(ICutVO cutVo)
         {
-            _backgroundView.SetBackgroundVO(cutVo.BackgroundVO);
-            _backgroundView.SetEffect(cutVo.Commands);
-            _characterView.SetCaracterVO(cutVo.Caracters);
+            //ここをよしなにすべし！！！
             _windowView.SetWindowVO(cutVo.WindowVO);
-            _choiceSelectView.SetChoices(cutVo.Choices);
+            _backgroundView.SetBackgroundVO(cutVo.BackgroundVO);
+            //_backgroundView.SetEffect(cutVo.Commands);
+            _characterView.SetCaracterVO(cutVo.Caracters);
+            //_choiceSelectView.SetChoices(cutVo.Choices);
+
+            //ここに画面暗転や選択肢表示などのコマンドが来た時によしなに表示できるようにする。
+
+
+
         }
 
     }

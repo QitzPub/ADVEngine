@@ -14,10 +14,8 @@ namespace Qitz.ADVGame
 
         public override void SetWindowVO(IWindowVO vo)
         {
-            if(vo != null)
-            {
-                body.text = vo.WindowText;
-            }
+            body.text = vo.WindowText;
+            name.text = vo.WindowCharacterName;
         }
     }
 }

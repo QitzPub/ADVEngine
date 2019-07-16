@@ -51,7 +51,7 @@ namespace Qitz.ADVGame
         DISAPPEAR,
         APPEAR,
         TIME,
-        SHOW_FACE,
+        SHOW_WINDOW_FACE_MARK,
         GO_UP,
         TB,
         KEY_INPUT,

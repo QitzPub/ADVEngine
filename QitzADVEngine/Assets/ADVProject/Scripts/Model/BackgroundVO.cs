@@ -9,11 +9,16 @@ namespace Qitz.ADVGame
     {
         IADVSpriteDataStore aDVSpriteDataStore;
 
-        public string Name { get; set; }
+        //public string Name { get; set; }
 
-        string withOutExtentionName => Path.GetFileNameWithoutExtension(Name);
+        public BackgroundVO(string spriteBackGroundName)
+        {
+            SpriteBackGroundName = spriteBackGroundName;
+        }
 
-        public string SpriteBackGroundName { get; set; }
+        string withOutExtentionName => Path.GetFileNameWithoutExtension(SpriteBackGroundName);
+
+        public string SpriteBackGroundName { get; private set; }
 
         public Sprite SpriteBackGround => aDVSpriteDataStore.BackgroundSpriteList.FirstOrDefault(bs=>bs.Sprite.name== withOutExtentionName).Sprite;
 

@@ -24,6 +24,8 @@ namespace Qitz.ADVGame.ParseUtil
         public List<PreCursorCutVO> PreCursorCuts { get; private set; }
     }
 
+
+
     public enum ADVLineType
     {
         NONE,

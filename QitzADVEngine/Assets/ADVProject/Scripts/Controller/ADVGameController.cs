@@ -24,7 +24,7 @@ namespace Qitz.ADVGame
         public IObservable<ICutVO> ADVCutObservable => advCutSunject;
         Subject<Unit> advScenarioEndSubject = new Subject<Unit>();
         public IObservable<Unit> ASVScenarioEndObservable => advScenarioEndSubject;
-        List<ICutVO> cutVOs => repository.ADVGameDataStore.cutVOs;
+        List<ICutVO> cutVOs => repository.ADVGameDataStore.CutVOs;
         int aDVCutCount => cutVOs.Count;
         int currentScenarioCutCount = 0;
 

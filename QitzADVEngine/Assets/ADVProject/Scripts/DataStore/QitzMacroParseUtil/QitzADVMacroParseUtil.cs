@@ -167,9 +167,9 @@ namespace Qitz.ADVGame.ParseUtil
                 var cVo = GetCommandVOFromCommandValueWord(commandValueWord);
                 commandValueList.Add(cVo);
             }
-            CommandType commandType = GetCommandTypeFromCommandWord(leadCommandWord);
+            CommandHeadVO commandHeadVO = GetCommandTypeFromCommandWord(leadCommandWord);
 
-            var commandVO = new CommandWrapVO(commandType, commandValueList);
+            var commandVO = new CommandWrapVO(commandHeadVO, commandValueList);
             return commandVO;
         }
 
@@ -208,7 +208,7 @@ namespace Qitz.ADVGame.ParseUtil
             }
             else if (commandValueWord == CommandValueString.顔.ToString())
             {
-                return new CommandVO(CommandValueType.SHOW_FACE, "");
+                return new CommandVO(CommandValueType.SHOW_WINDOW_FACE_MARK, "");
             }
             else if (commandValueWord == CommandValueString.keyinput.ToString())
             {
@@ -228,39 +228,39 @@ namespace Qitz.ADVGame.ParseUtil
             }
         }
 
-        CommandType GetCommandTypeFromCommandWord(string commandWord)
+        CommandHeadVO GetCommandTypeFromCommandWord(string commandWord)
         {
             if (commandWord == CommandString.bg.ToString())
             {
-                return CommandType.BG;
+                return new CommandHeadVO(CommandType.BG,"");
             }
             else if (commandWord == CommandString.bgm.ToString())
             {
-                return CommandType.BGM;
+                return new CommandHeadVO(CommandType.BGM, "");
             }
             else if (commandWord == CommandString.messageoff.ToString())
             {
-                return CommandType.MESSAGEOFF;
+                return new CommandHeadVO(CommandType.MESSAGEOFF, "");
             }
             else if (commandWord == CommandString.messageon.ToString())
             {
-                return CommandType.MESSAGEON;
+                return new CommandHeadVO(CommandType.MESSAGEON, "");
             }
             else if (commandWord == CommandString.wait.ToString())
             {
-                return CommandType.WAIT;
+                return new CommandHeadVO(CommandType.WAIT, "");
             }
             else if (commandWord == CommandString.暗転共通.ToString())
             {
-                return CommandType.BLAKOUT;
+                return new CommandHeadVO(CommandType.BLAKOUT, "");
             }
             else if (0 <= Array.IndexOf(ParseCommandList.characterList, commandWord))
             {
-                return CommandType.CARACTER;
+                return new CommandHeadVO(CommandType.CARACTER, commandWord);
             }
             else if (commandWord == CommandString.ev.ToString())
             {
-                return CommandType.EV;
+                return new CommandHeadVO(CommandType.EV, "");
             }
 
             throw new Exception($"想定されないコマンドです:{commandWord}");

@@ -7,7 +7,7 @@ namespace Qitz.ADVGame
     {
         IWindowVO WindowVO { get; }
 
-        string BgmID { get; }
+        //string BgmID { get; }
 
         List<ICommandWrapVO> Commands { get; }
 

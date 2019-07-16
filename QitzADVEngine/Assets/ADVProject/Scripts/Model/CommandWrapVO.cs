@@ -3,16 +3,27 @@ using System.Collections.Generic;
 
 namespace Qitz.ADVGame
 {
+    public class CommandHeadVO
+    {
+        public CommandHeadVO(CommandType commandType, string commandValue)
+        {
+            CommandType = commandType;
+            CommandValue = commandValue;
+        }
+        public CommandType CommandType { get; private set; }
+        public string CommandValue { get; private set; }
+    }
+
     public class CommandWrapVO : ICommandWrapVO
     {
 
-        public CommandWrapVO(CommandType commandType, List<CommandVO> commandValues)
+        public CommandWrapVO(CommandHeadVO commandHeadVO, List<CommandVO> commandValues)
         {
-            this.CommandType = commandType;
+            this.CommandHeadVO = commandHeadVO;
             this.CommandValues = commandValues;
         }
 
-        public CommandType CommandType { get; private set; }
+        public CommandHeadVO CommandHeadVO { get; private set; }
         public List<CommandVO> CommandValues { get; private set; }
 
     }

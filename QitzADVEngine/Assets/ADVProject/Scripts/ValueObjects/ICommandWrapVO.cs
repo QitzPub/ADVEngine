@@ -5,7 +5,7 @@ namespace Qitz.ADVGame
 {
     public interface ICommandWrapVO
     {
-        CommandType CommandType { get; }
+        CommandHeadVO CommandHeadVO { get; }
         List<CommandVO> CommandValues { get; }
     }
 }
