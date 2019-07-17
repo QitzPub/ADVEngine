@@ -33,12 +33,7 @@ namespace Qitz.ADVGame
             //ここのタイミングで所持しているコマンドに応じてCharacterVOやBackGroundVOをセットする
             if (commandWrapVO.CommandHeadVO.CommandType == CommandType.CARACTER)
             {
-                string characterName = commandWrapVO.CommandHeadVO.CommandValue;
-                var bodyCommandValue = commandWrapVO.CommandValues.FirstOrDefault(cv => cv.CommandValueType == CommandValueType.SET_COSTUME);
-                string bodyName = bodyCommandValue == null ? "" : bodyCommandValue.Value;
-                var faceCommandValue = commandWrapVO.CommandValues.FirstOrDefault(cv => cv.CommandValueType == CommandValueType.SET_FACE);
-                string faceName = faceCommandValue == null ? "" : faceCommandValue.Value;
-                var characterVO = new CharacterVO(characterName, bodyName, faceName, commandWrapVO.CommandValues);
+                var characterVO = new CharacterVO(commandWrapVO);
                 caracters.Add(characterVO);
 
             }else if (commandWrapVO.CommandHeadVO.CommandType == CommandType.BG || commandWrapVO.CommandHeadVO.CommandType == CommandType.EV)

@@ -8,12 +8,18 @@ namespace Qitz.ADVGame
 {
     public class CharacterVO : ICaracterVO
     {
-        public CharacterVO(string name, string spriteBodyName, string spriteFaceName, List<CommandVO> characterCommands)
+        public CharacterVO(ICommandWrapVO commandWrapVO)
         {
-            this.Name = name;
-            this.SpriteBodyName = spriteBodyName;
-            this.SpriteFaceName = spriteFaceName;
-            this.characterCommands = characterCommands;
+            string characterName = commandWrapVO.CommandHeadVO.CommandValue;
+            var bodyCommandValue = commandWrapVO.CommandValues.FirstOrDefault(cv => cv.CommandValueType == CommandValueType.SET_COSTUME);
+            string bodyName = bodyCommandValue == null ? "" : bodyCommandValue.Value;
+            var faceCommandValue = commandWrapVO.CommandValues.FirstOrDefault(cv => cv.CommandValueType == CommandValueType.SET_FACE);
+            string faceName = faceCommandValue == null ? "" : faceCommandValue.Value;
+
+            this.Name = characterName;
+            this.SpriteBodyName = bodyName;
+            this.SpriteFaceName = faceName;
+            this.characterCommands = commandWrapVO.CommandValues;
         }
 
         IADVSpriteDataStore aDVSpriteDataStore;
@@ -77,6 +83,10 @@ namespace Qitz.ADVGame
 
         public Vector2 FacePostion => aDVSpriteDataStore.CharacterFacePostionList.FirstOrDefault(cfp => cfp.Character == Character).Postion;
 
+        public bool AppendCharacter => characterCommands.FirstOrDefault(cc=>cc.CommandValueType == CommandValueType.APPEAR) != null;
+
+        public bool DisAppendCharacter => characterCommands.FirstOrDefault(cc => cc.CommandValueType == CommandValueType.DISAPPEAR) != null;
+
 
 
         //public void SetCharacterCommands(List<CommandVO> characterCommands)
@@ -87,6 +97,15 @@ namespace Qitz.ADVGame
         public void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore)
         {
             this.aDVSpriteDataStore = aDVSpriteDataStore;
+        }
+
+        public void UpDataCharacterStateFromNewCharacterVO(ICaracterVO newCharacterState)
+        {
+            this.Name = newCharacterState.Name;
+            this.SpriteBodyName = newCharacterState.SpriteBodyName == "" ? this.SpriteBodyName : newCharacterState.SpriteBodyName;
+            this.SpriteFaceName = newCharacterState.SpriteFaceName == "" ? this.SpriteFaceName : newCharacterState.SpriteFaceName;
+
+
         }
     }
 }

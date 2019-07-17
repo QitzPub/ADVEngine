@@ -27,7 +27,9 @@ namespace Qitz.ADVGame
         Vector2 FacePostion { get; }
 
         void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore);
-
+        bool AppendCharacter { get; }
+        bool DisAppendCharacter { get; }
+        void UpDataCharacterStateFromNewCharacterVO(ICaracterVO newCharacterState);
     }
 
     //キャラクタの出現効果
