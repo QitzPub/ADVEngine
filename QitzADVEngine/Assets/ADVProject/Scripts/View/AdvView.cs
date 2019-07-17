@@ -30,6 +30,7 @@ namespace Qitz.ADVGame
         private void Start()
         {
             ADVCutObservable.Subscribe(cutVO => UpdateADVViews(cutVO)).AddTo(this.gameObject);
+            Next();
         }
 
         void UpdateADVViews(ICutVO cutVo)

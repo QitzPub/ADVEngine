@@ -21,9 +21,22 @@ namespace Qitz.ADVGame
             Image characterFaceImage;
             public Image CharacterFaceImage => characterFaceImage;
         }
+        [System.Serializable]
+        struct CharacterViewPostionSetting
+        {
+            [SerializeField]
+            Vector3 postion;
+            public Vector3 Postion => postion;
+            [SerializeField]
+            Vector3 scale;
+            public Vector3 Scale => scale;
+        }
+
 
         [SerializeField]
         List<CharacterImages> characterImages;
+        [SerializeField]
+        List<CharacterViewPostionSetting> viewPostion;
 
         List<ICaracterVO> appendedCharacter = new List<ICaracterVO>();
 
@@ -31,7 +44,7 @@ namespace Qitz.ADVGame
         {
 
             characters.ForEach(c=> SetAppendedCharacterList(ref appendedCharacter,c));
-
+            SetViewPostionFromCharacterCount(appendedCharacter.Count);
             //一旦キャラクターイメージを非表示にする
             foreach (var ci in characterImages)
             {
@@ -50,6 +63,12 @@ namespace Qitz.ADVGame
                 characterImages[i].CharacterFaceImage.transform.localPosition = appendedCharacter[i].FacePostion;
             }
 
+        }
+
+        void SetViewPostionFromCharacterCount(int characterCount)
+        {
+            this.transform.localPosition = viewPostion[characterCount].Postion;
+            this.transform.localScale = viewPostion[characterCount].Scale;
         }
 
 

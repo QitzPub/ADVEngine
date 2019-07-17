@@ -32,6 +32,8 @@ Mmmm.
 【リリファ】
 (Is Akira a little nervous?)
 
+[リリファ 消 time=0]
+[アイン 消 time=0]
 [bgm file="bgm002_a.wav"]
 ♪～
 
