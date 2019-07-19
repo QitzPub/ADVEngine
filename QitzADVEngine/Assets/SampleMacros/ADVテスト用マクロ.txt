@@ -9,7 +9,7 @@
 
 [bg file="039002.jpg"]
 [messageon]
-[bgm file="bgm008_a.wav"]
+[bgm file="test1.wav"]
 A few days after the gokon--.
 
 [seladd text=""選択肢1"" target=*kyo_sel_01a]
@@ -32,6 +32,7 @@ Akira and I decided to go to karaoke with the girls.
 Hey Akira, want to do the first song?
 
 [seltag target=*kyo_sel_01b]
+[bgm file="test2.wav"]
 [アイン 出 通常服 up 真顔 time=0]
 【アイン】
 Mmmm.
@@ -47,7 +48,6 @@ Mmmm.
 
 [bg file="034003.jpg"]
 [messageon]
-[bgm file="bgm008_d.wav"]
 After Karaoke--.
 
 [seltag target=*end]

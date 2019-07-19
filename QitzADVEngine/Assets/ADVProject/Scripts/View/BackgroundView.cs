@@ -12,6 +12,11 @@ namespace Qitz.ADVGame
 
         public override void SetBackgroundVO(IBackgroundVO vo)
         {
+            if(vo != null)
+            {
+                backgroundImage.sprite = vo.SpriteBackGround;
+            }
+
             //throw new NotImplementedException();
         }
 
