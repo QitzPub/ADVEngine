@@ -41,7 +41,10 @@ namespace Qitz.ADVGame
         SE,
         EV,
         WAIT,
-        
+        SELADD,
+        SELECT,
+        SELTAG,
+        JAMPTO,
     }
     public enum CommandValueType
     {
@@ -57,6 +60,8 @@ namespace Qitz.ADVGame
         KEY_INPUT,
         SET_COSTUME,
         SET_FACE,
+        TEXT,
+        TARGET,
     }
 
     public enum CommandString
@@ -69,6 +74,10 @@ namespace Qitz.ADVGame
         bgm,
         wait,
         ev,
+        seladd,
+        select,
+        seltag,
+        jampto,
     }
     public enum CommandValueString
     {
@@ -82,6 +91,8 @@ namespace Qitz.ADVGame
         up,
         tb,
         keyinput,
+        text,
+        target,
     }
 
     public enum Character

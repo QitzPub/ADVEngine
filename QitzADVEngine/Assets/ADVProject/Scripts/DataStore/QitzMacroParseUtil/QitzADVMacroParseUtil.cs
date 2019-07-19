@@ -222,6 +222,16 @@ namespace Qitz.ADVGame.ParseUtil
             {
                 return new CommandVO(CommandValueType.SET_FACE, commandValueWord);
             }
+            else if (commandValueWord == CommandValueString.text.ToString())
+            {
+                string textValue = commandValueWord.Replace("\"\"", "").Split('=')[1];
+                return new CommandVO(CommandValueType.TEXT, textValue);
+            }
+            else if (commandValueWord == CommandValueString.target.ToString())
+            {
+                string targetName = commandValueWord.Split('=')[1];
+                return new CommandVO(CommandValueType.TARGET, targetName);
+            }
             else
             {
                 throw new Exception($"想定されていない形式です:{commandValueWord}");
@@ -261,6 +271,22 @@ namespace Qitz.ADVGame.ParseUtil
             else if (commandWord == CommandString.ev.ToString())
             {
                 return new CommandHeadVO(CommandType.EV, "");
+            }
+            else if (commandWord == CommandString.seladd.ToString())
+            {
+                return new CommandHeadVO(CommandType.SELADD, "");
+            }
+            else if (commandWord == CommandString.select.ToString())
+            {
+                return new CommandHeadVO(CommandType.SELECT, "");
+            }
+            else if (commandWord == CommandString.seltag.ToString())
+            {
+                return new CommandHeadVO(CommandType.SELTAG, "");
+            }
+            else if (commandWord == CommandString.jampto.ToString())
+            {
+                return new CommandHeadVO(CommandType.JAMPTO, "");
             }
 
             throw new Exception($"想定されないコマンドです:{commandWord}");
