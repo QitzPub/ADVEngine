@@ -21,10 +21,15 @@ namespace Qitz.ADVGame
         [SerializeField] private AChoiceSelectView _choiceSelectView;
         public override IObservable<Unit> ASVScenarioEndObservable => this.aDVGameController.ASVScenarioEndObservable;
         public override IObservable<ICutVO> ADVCutObservable => this.aDVGameController.ADVCutObservable;
+        ICutVO currentCut;
+
 
         public override void Next(string jumpTo = "")
         {
-            this.aDVGameController.Next(jumpTo);
+            string _jumpTo = jumpTo;
+            bool ableToJump = currentCut != null && currentCut.JumpToValue != "";
+            if (ableToJump) _jumpTo = currentCut.JumpToValue;
+            this.aDVGameController.Next(_jumpTo);
         }
 
         private void Start()
@@ -35,6 +40,9 @@ namespace Qitz.ADVGame
 
         void UpdateADVViews(ICutVO cutVo)
         {
+            currentCut = cutVo;
+
+
             //ここをよしなにすべし！！！
             _windowView.SetWindowVO(cutVo.WindowVO);
             _backgroundView.SetBackgroundVO(cutVo.BackgroundVO);

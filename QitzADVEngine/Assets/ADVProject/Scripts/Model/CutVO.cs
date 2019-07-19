@@ -39,6 +39,9 @@ namespace Qitz.ADVGame
         public string BGValue => commands.FirstOrDefault(cd=>cd.BGValue != "") != null 
                                     ? commands.FirstOrDefault(cd => cd.BGValue != "").BGValue : "";
 
+        public string JumpToValue => commands.FirstOrDefault(cd => cd.JumpToValue != "") != null
+                                    ? commands.FirstOrDefault(cd => cd.JumpToValue != "").JumpToValue : "";
+
         public CutVO(int number)
         {
             this.Number = number;

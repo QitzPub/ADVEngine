@@ -12,6 +12,7 @@ namespace Qitz.ADVGame
         string SelTagValue { get; }
         string BGMValue { get; }
         string BGValue { get; }
+        string JumpToValue { get; }
         //string BgmID { get; }
 
         List<ICommandWrapVO> Commands { get; }
