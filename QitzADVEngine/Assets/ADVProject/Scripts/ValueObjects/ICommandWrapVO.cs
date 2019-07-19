@@ -7,5 +7,8 @@ namespace Qitz.ADVGame
     {
         CommandHeadVO CommandHeadVO { get; }
         List<CommandVO> CommandValues { get; }
+        string SelTagValue { get; }
+        string BGMValue { get; }
+        string BGValue { get; }
     }
 }

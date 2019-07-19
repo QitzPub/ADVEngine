@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+using System.Linq;
 
 namespace Qitz.ADVGame
 {
@@ -12,20 +14,25 @@ namespace Qitz.ADVGame
         [SerializeField]
         Image background;
 
-        public override void HideView()
-        {
-            selectItems.ForEach(si=>si.HideView());
-            background.gameObject.SetActive(false);
-        }
+        public List<SelectItemView> SelectItems { get => selectItems; set => selectItems = value; }
 
-        public override void SetChoices(List<IChoiceVO> choices)
+        public override void Initialize(Action<string> selectAction,List<ICommandWrapVO> commands)
         {
             int i = 0;
-            foreach (var t in choices)
+            background.gameObject.SetActive(true);
+            SelectItems.Take(commands.Count).ToList().ForEach(si=>si.ShowView());
+            foreach (var c in commands)
             {
-                selectItems[i].SetText(choices[i].text);
+                SelectItems[i].Initialize(c.CommandValues, selectAction);
                 i++;
             }
         }
+
+        public override void HideView()
+        {
+            SelectItems.ForEach(si=>si.HideView());
+            background.gameObject.SetActive(false);
+        }
+
     }
 }

@@ -27,20 +27,22 @@ namespace Qitz.ADVGame.ParseUtil
         List<ICutVO> GetCutVOs(List<PreCursorCutSet> preCursorCutSets)
         {
             List<ICutVO> cutVOs = new List<ICutVO>();
+            int number = 0;
             foreach (var preCursorCutSet in preCursorCutSets)
             {
-                var cutVO = GetCutVO(preCursorCutSet);
+                var cutVO = GetCutVO(preCursorCutSet, number);
                 if (!cutVO.IsEmptyVO)
                 {
                     cutVOs.Add(cutVO);
                 }
+                number++;
             }
             return cutVOs;
         }
 
-        CutVO GetCutVO(PreCursorCutSet preCursorCutSet)
+        CutVO GetCutVO(PreCursorCutSet preCursorCutSet,int number)
         {
-            CutVO cutVO = new CutVO();
+            CutVO cutVO = new CutVO(number);
             foreach (var pcv in preCursorCutSet.PreCursorCuts)
             {
                 SetCutVO(ref cutVO, pcv);
@@ -222,12 +224,12 @@ namespace Qitz.ADVGame.ParseUtil
             {
                 return new CommandVO(CommandValueType.SET_FACE, commandValueWord);
             }
-            else if (commandValueWord == CommandValueString.text.ToString())
+            else if (commandValueWord.IndexOf(CommandValueString.text.ToString()) != -1)
             {
                 string textValue = commandValueWord.Replace("\"\"", "").Split('=')[1];
                 return new CommandVO(CommandValueType.TEXT, textValue);
             }
-            else if (commandValueWord == CommandValueString.target.ToString())
+            else if (commandValueWord.IndexOf(CommandValueString.target.ToString()) != -1)
             {
                 string targetName = commandValueWord.Split('=')[1];
                 return new CommandVO(CommandValueType.TARGET, targetName);

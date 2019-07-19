@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Qitz.ADVGame
 {
@@ -26,6 +27,14 @@ namespace Qitz.ADVGame
         public CommandHeadVO CommandHeadVO { get; private set; }
         public List<CommandVO> CommandValues { get; private set; }
 
+        public string SelTagValue => CommandHeadVO.CommandType == CommandType.SELTAG 
+                                     ? CommandValues.FirstOrDefault(cd=>cd.CommandValueType== CommandValueType.TARGET).Value : "";
+
+        public string BGMValue => CommandHeadVO.CommandType == CommandType.BGM
+                                     ? CommandValues.FirstOrDefault(cd => cd.CommandValueType == CommandValueType.FILE).Value : "";
+
+        public string BGValue => CommandHeadVO.CommandType == CommandType.BG
+                                     ? CommandValues.FirstOrDefault(cd => cd.CommandValueType == CommandValueType.FILE).Value : "";
     }
     public class CommandVO
     {

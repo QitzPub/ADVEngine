@@ -5,8 +5,13 @@ namespace Qitz.ADVGame
 {
     public interface ICutVO
     {
+        int Number { get; }
+
         IWindowVO WindowVO { get; }
 
+        string SelTagValue { get; }
+        string BGMValue { get; }
+        string BGValue { get; }
         //string BgmID { get; }
 
         List<ICommandWrapVO> Commands { get; }

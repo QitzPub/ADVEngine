@@ -4,6 +4,7 @@ using Qitz.ArchitectureCore;
 using UniRx;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Qitz.ADVGame
 {
@@ -12,7 +13,7 @@ namespace Qitz.ADVGame
         IObservable<Unit> ASVScenarioEndObservable { get; }
         IObservable<ICutVO> ADVCutObservable { get; }
         void Initialize(string macro);
-        void Next();
+        void Next(string jumpTo);
     }
 
     public class ADVGameController : AController<ADVGameRepository>, IADVGameController
@@ -28,10 +29,18 @@ namespace Qitz.ADVGame
         int aDVCutCount => cutVOs.Count;
         int currentScenarioCutCount = 0;
 
-        public void Next()
+        public void Next(string jumpTo = "")
         {
+            if(jumpTo != "")
+            {
+                ICutVO targetCut = cutVOs.FirstOrDefault(cv=>cv.SelTagValue== jumpTo);
+                if (targetCut == null) throw new Exception($"jump先が存在しません:{jumpTo}");
+                currentScenarioCutCount = targetCut.Number;
+            }
+
             bool isScenarioEnd = cutVOs.Count <= currentScenarioCutCount;
             if (isScenarioEnd) {
+                Debug.Log("isScenarioEnd");
                 advScenarioEndSubject.OnNext(Unit.Default);
                 return;
             }

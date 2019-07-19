@@ -8,7 +8,7 @@ using System.Linq;
 namespace Qitz.ADVGame
 {
     public  abstract class  AAdvView:ADVGameView{
-        public abstract void Next();
+        public abstract void Next(string jumpTo);
         public abstract IObservable<Unit> ASVScenarioEndObservable { get; }
         public abstract IObservable<ICutVO> ADVCutObservable { get; }
     }
@@ -22,9 +22,9 @@ namespace Qitz.ADVGame
         public override IObservable<Unit> ASVScenarioEndObservable => this.aDVGameController.ASVScenarioEndObservable;
         public override IObservable<ICutVO> ADVCutObservable => this.aDVGameController.ADVCutObservable;
 
-        public override void Next()
+        public override void Next(string jumpTo = "")
         {
-            this.aDVGameController.Next();
+            this.aDVGameController.Next(jumpTo);
         }
 
         private void Start()
@@ -40,13 +40,27 @@ namespace Qitz.ADVGame
             _backgroundView.SetBackgroundVO(cutVo.BackgroundVO);
             //_backgroundView.SetEffect(cutVo.Commands);
             _characterView.SetCaracterVO(cutVo.Caracters);
-            //_choiceSelectView.SetChoices(cutVo.Choices);
+            bool existSelectCommand = cutVo.Commands.FirstOrDefault(cd => cd.CommandHeadVO.CommandType == CommandType.SELECT) != null;
+            if (existSelectCommand)
+            {
+                var salAddList = cutVo.Commands.Where(cd => cd.CommandHeadVO.CommandType == CommandType.SELADD).ToList();
+                _choiceSelectView.Initialize(ChoiceSelectAction, salAddList);
+            }
+            else
+            {
+                _choiceSelectView.HideView();
+            }
+
 
             //ここに画面暗転や選択肢表示などのコマンドが来た時によしなに表示できるようにする。
 
-
-
         }
+
+        void ChoiceSelectAction(string selectValue)
+        {
+            Next(selectValue);
+        }
+
 
     }
 }

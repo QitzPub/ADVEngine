@@ -28,6 +28,22 @@ namespace Qitz.ADVGame
 
         public bool IsEmptyVO => commands.Count == 0 && windowVO.WindowCharacterName == "" && windowVO.WindowText == "";
 
+        public int Number { get; private set; }
+
+        public string SelTagValue => commands.FirstOrDefault(cd=>cd.SelTagValue != "") != null 
+                                    ? commands.FirstOrDefault(cd => cd.SelTagValue != "").SelTagValue : "";
+
+        public string BGMValue => commands.FirstOrDefault(cd => cd.BGMValue != "") != null
+                                    ? commands.FirstOrDefault(cd => cd.BGMValue != "").BGMValue : "";
+
+        public string BGValue => commands.FirstOrDefault(cd=>cd.BGValue != "") != null 
+                                    ? commands.FirstOrDefault(cd => cd.BGValue != "").BGValue : "";
+
+        public CutVO(int number)
+        {
+            this.Number = number;
+        }
+
         public void AddCommand(ICommandWrapVO commandWrapVO)
         {
             //ここのタイミングで所持しているコマンドに応じてCharacterVOやBackGroundVOをセットする
