@@ -10,6 +10,7 @@ namespace Qitz.ADVGame
         string SelTagValue { get; }
         string BGMValue { get; }
         string BGValue { get; }
+        string SEValue { get; }
         string JumpToValue { get; }
     }
 }

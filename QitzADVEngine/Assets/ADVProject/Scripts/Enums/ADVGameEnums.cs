@@ -78,6 +78,7 @@ namespace Qitz.ADVGame
         select,
         seltag,
         jampto,
+        se,
     }
     public enum CommandValueString
     {

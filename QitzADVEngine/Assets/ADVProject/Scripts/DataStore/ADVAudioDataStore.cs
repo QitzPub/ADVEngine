@@ -12,6 +12,9 @@ namespace Qitz.ADVGame
         [SerializeField]
         List<QitzAudioAsset> qitzAudios;
         public List<QitzAudioAsset> QitzAudios => qitzAudios;
+        [SerializeField]
+        List<QitzAudioAsset> qitzSEs;
+        public List<QitzAudioAsset> QitzSEs => qitzSEs;
     }
 
     [Serializable]
@@ -25,6 +28,7 @@ namespace Qitz.ADVGame
     public interface IADVAudioDataStore
     {
         List<QitzAudioAsset> QitzAudios { get; }
+        List<QitzAudioAsset> QitzSEs { get; }
     }
 
 

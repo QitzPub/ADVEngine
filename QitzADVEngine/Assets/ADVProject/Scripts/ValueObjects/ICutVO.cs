@@ -12,10 +12,11 @@ namespace Qitz.ADVGame
         string SelTagValue { get; }
         string BGMValue { get; }
         string BGValue { get; }
+        string SEValue { get; }
         string JumpToValue { get; }
         //string BgmID { get; }
         QitzAudioAsset QitzAudio { get; }
-
+        QitzAudioAsset SE { get; }
         List<ICommandWrapVO> Commands { get; }
 
         IBackgroundVO BackgroundVO { get; }

@@ -10,6 +10,7 @@
 [bg file="039002.jpg"]
 [messageon]
 [bgm file="test1.wav"]
+[se file="se_test1.wav"]
 A few days after the gokon--.
 
 [seladd text=""選択肢1"" target=*kyo_sel_01a]
@@ -20,6 +21,7 @@ A few days after the gokon--.
 【女子生徒１】
 Hi everyone, sorry for causing trouble last week.
 
+[se file="se_test2.wav"]
 [リリファ 出 顔 通常服 tb 笑顔 time=0]
 【リリファ】
 Sure!

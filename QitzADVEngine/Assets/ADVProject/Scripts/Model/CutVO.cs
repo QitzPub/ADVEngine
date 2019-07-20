@@ -45,6 +45,11 @@ namespace Qitz.ADVGame
 
         public QitzAudioAsset QitzAudio => BGMValue == "" ? null : aDVAudioDataStore.QitzAudios.FirstOrDefault(qa => qa.Audio.name == System.IO.Path.GetFileNameWithoutExtension(BGMValue));
 
+        public string SEValue => commands.FirstOrDefault(cd => cd.SEValue != "") != null
+                                    ? commands.FirstOrDefault(cd => cd.SEValue != "").SEValue : "";
+
+        public QitzAudioAsset SE => SEValue == "" ? null : aDVAudioDataStore.QitzSEs.FirstOrDefault(qa => qa.Audio.name == System.IO.Path.GetFileNameWithoutExtension(SEValue));
+
         public CutVO(int number)
         {
             this.Number = number;

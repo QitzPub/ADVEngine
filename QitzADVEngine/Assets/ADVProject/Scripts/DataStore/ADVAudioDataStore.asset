@@ -15,3 +15,6 @@ MonoBehaviour:
   qitzAudios:
   - audio: {fileID: 8300000, guid: 0643908ea2a90c341a1f488fb302af76, type: 3}
   - audio: {fileID: 8300000, guid: a93ce8dd966882c4389385f52048895d, type: 3}
+  qitzSEs:
+  - audio: {fileID: 8300000, guid: 17de11aa90eda4249b024dfa26164b3e, type: 3}
+  - audio: {fileID: 8300000, guid: 361275894dd6e448bbf731a12ce0afce, type: 3}

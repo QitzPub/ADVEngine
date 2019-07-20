@@ -290,6 +290,10 @@ namespace Qitz.ADVGame.ParseUtil
             {
                 return new CommandHeadVO(CommandType.JAMPTO, "");
             }
+            else if (commandWord == CommandString.se.ToString())
+            {
+                return new CommandHeadVO(CommandType.SE, "");
+            }
 
             throw new Exception($"想定されないコマンドです:{commandWord}");
         }

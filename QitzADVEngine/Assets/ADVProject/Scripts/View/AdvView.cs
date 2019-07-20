@@ -45,6 +45,8 @@ namespace Qitz.ADVGame
 
 
             aDVAudioPlayer.PlayAudio(cutVo.QitzAudio?.Audio);
+            aDVAudioPlayer.PlaySE(cutVo.SE?.Audio);
+
             _windowView.SetWindowVO(cutVo.WindowVO);
             _backgroundView.SetBackgroundVO(cutVo.BackgroundVO);
             //_backgroundView.SetEffect(cutVo.Commands);

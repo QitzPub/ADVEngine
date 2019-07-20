@@ -38,6 +38,9 @@ namespace Qitz.ADVGame
 
         public string JumpToValue => CommandHeadVO.CommandType == CommandType.JAMPTO
                                      ? CommandValues.FirstOrDefault(cd => cd.CommandValueType == CommandValueType.TARGET).Value : "";
+
+        public string SEValue => CommandHeadVO.CommandType == CommandType.SE
+                                     ? CommandValues.FirstOrDefault(cd => cd.CommandValueType == CommandValueType.FILE).Value : "";
     }
     public class CommandVO
     {
