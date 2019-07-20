@@ -15,6 +15,7 @@ namespace Qitz.ADVGame
         Image blackOutImage;
         [SerializeField]
         float blackOutWaitTime = 2.0f;
+        [SerializeField] AWindowView _windowView;
         public float BlackOutWaitTime => blackOutWaitTime;
         Subject<Unit> blackOutEndSubject = new Subject<Unit>();
         public IObservable<Unit> BlackOutEndObservable => blackOutEndSubject;
@@ -31,6 +32,13 @@ namespace Qitz.ADVGame
                 blackOutEndSubject.OnNext(Unit.Default);
                 await UniTask.Delay(1000);
                 blackOutImage.gameObject.SetActive(false);
+            }else if(type == CommandType.MESSAGEOFF)
+            {
+                _windowView.Hide();
+            }
+            else if (type == CommandType.MESSAGEON)
+            {
+                _windowView.Show();
             }
 
         }
