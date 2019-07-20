@@ -1,23 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class ADVAudioPlayer : MonoBehaviour
+namespace Qitz.ADVGame
 {
-    [SerializeField]
-    AudioSource bgmAudioSource;
-    [SerializeField]
-    AudioSource seAudioSource;
+    public class ADVAudioPlayer : MonoBehaviour
+    {
+        [SerializeField]
+        AudioSource bgmAudioSource;
+        [SerializeField]
+        AudioSource seAudioSource;
 
-    public void PlayAudio(AudioClip audioClip)
-    {
-        if (audioClip == null) return;
-        bgmAudioSource.clip = audioClip;
-        bgmAudioSource.Play();
-    }
-    public void PlaySE(AudioClip audioClip)
-    {
-        if (audioClip == null) return;
-        seAudioSource.PlayOneShot(audioClip);
+        public void PlayAudio(AudioClip audioClip)
+        {
+            if (audioClip == null) return;
+            bgmAudioSource.clip = audioClip;
+            bgmAudioSource.Play();
+        }
+        public void PlaySE(AudioClip audioClip)
+        {
+            if (audioClip == null) return;
+            seAudioSource.PlayOneShot(audioClip);
+        }
     }
 }

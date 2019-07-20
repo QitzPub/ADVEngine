@@ -20,6 +20,7 @@ namespace Qitz.ADVGame
         [SerializeField] private AWindowView _windowView;
         [SerializeField] private AChoiceSelectView _choiceSelectView;
         [SerializeField] private ADVAudioPlayer aDVAudioPlayer;
+        [SerializeField] private EffectView effectView;
         public override IObservable<Unit> ASVScenarioEndObservable => this.aDVGameController.ASVScenarioEndObservable;
         public override IObservable<ICutVO> ADVCutObservable => this.aDVGameController.ADVCutObservable;
         ICutVO currentCut;
@@ -37,20 +38,32 @@ namespace Qitz.ADVGame
         {
             ADVCutObservable.Subscribe(cutVO => UpdateADVViews(cutVO)).AddTo(this.gameObject);
             Next();
+            //ブラックアウトが走った場合は次のCutへ
+            effectView.BlackOutEndObservable.Subscribe(_ => Next());
         }
 
         void UpdateADVViews(ICutVO cutVo)
         {
             currentCut = cutVo;
 
-
+            //画面エフェクトの実行
+            cutVo.Commands.ForEach(cd => effectView.DoEffect(cd));
+            //音楽を鳴らす
             aDVAudioPlayer.PlayAudio(cutVo.QitzAudio?.Audio);
+            //seを鳴らす
             aDVAudioPlayer.PlaySE(cutVo.SE?.Audio);
-
+            //Windowの表示更新
             _windowView.SetWindowVO(cutVo.WindowVO);
+            //バックグラウンドの更新
             _backgroundView.SetBackgroundVO(cutVo.BackgroundVO);
-            //_backgroundView.SetEffect(cutVo.Commands);
+            //キャラクタービューの更新
             _characterView.SetCaracterVO(cutVo.Caracters);
+            //選択肢の表示
+            SetChoiceView(cutVo);
+        }
+
+        void SetChoiceView(ICutVO cutVo)
+        {
             bool existSelectCommand = cutVo.Commands.FirstOrDefault(cd => cd.CommandHeadVO.CommandType == CommandType.SELECT) != null;
             if (existSelectCommand)
             {
@@ -61,10 +74,6 @@ namespace Qitz.ADVGame
             {
                 _choiceSelectView.HideView();
             }
-
-
-            //ここに画面暗転や選択肢表示などのコマンドが来た時によしなに表示できるようにする。
-
         }
 
         void ChoiceSelectAction(string selectValue)
