@@ -16,7 +16,7 @@ namespace Qitz.ADVGame
     public class AdvView : AAdvView
     {
         [SerializeField] private ABackgroundView _backgroundView;
-        [SerializeField] private ACharacterView _characterView;
+        [SerializeField] private ACharactersWrapView _characterView;
         [SerializeField] private AWindowView _windowView;
         [SerializeField] private AChoiceSelectView _choiceSelectView;
         [SerializeField] private ADVAudioPlayer aDVAudioPlayer;

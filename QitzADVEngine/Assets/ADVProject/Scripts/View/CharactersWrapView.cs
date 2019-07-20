@@ -6,10 +6,10 @@ using System.Linq;
 
 namespace Qitz.ADVGame
 {
-    public class CharacterView : ACharacterView
+    public class CharactersWrapView : ACharactersWrapView
     {
         [System.Serializable]
-        struct CharacterImages
+        class CharacterView
         {
             [SerializeField]
             GameObject parent;
@@ -20,6 +20,21 @@ namespace Qitz.ADVGame
             [SerializeField]
             Image characterFaceImage;
             public Image CharacterFaceImage => characterFaceImage;
+            [SerializeField]
+            CanvasGroup canvasGroup;
+
+            public void SetCharacterVO(ICaracterVO caracterVO)
+            {
+                Parent.SetActive(true);
+                CharacterBodyImage.sprite = caracterVO.BodySprite;
+                CharacterBodyImage.SetNativeSize();
+                CharacterBodyImage.transform.localPosition = caracterVO.BodyPostion;
+
+                CharacterFaceImage.sprite = caracterVO.FaceSprite;
+                CharacterFaceImage.SetNativeSize();
+                CharacterFaceImage.transform.localPosition = caracterVO.FacePostion;
+            }
+
         }
         [System.Serializable]
         struct CharacterViewPostionSetting
@@ -34,37 +49,28 @@ namespace Qitz.ADVGame
 
 
         [SerializeField]
-        List<CharacterImages> characterImages;
+        List<CharacterView> characterViews;
         [SerializeField]
         List<CharacterViewPostionSetting> viewPostion;
 
+        //List<ICaracterVO> prevAppendedCharacter = new List<ICaracterVO>();
         List<ICaracterVO> appendedCharacter = new List<ICaracterVO>();
 
         public override void SetCaracterVO(List<ICaracterVO> characters)
         {
-
             characters.ForEach(c=> SetAppendedCharacterList(ref appendedCharacter,c));
             SetViewPostionFromCharacterCount(appendedCharacter.Count);
-            //一旦キャラクターイメージを非表示にする
-            foreach (var ci in characterImages)
-            {
-                ci.Parent.SetActive(false);
-            }
+            //一旦キャラクタービュウを非表示に
+            characterViews.ForEach(cv => cv.Parent.SetActive(false));
 
             for (int i = 0; i < appendedCharacter.Count; i++)
             {
-                characterImages[i].Parent.SetActive(true);
-                characterImages[i].CharacterBodyImage.sprite = appendedCharacter[i].BodySprite;
-                characterImages[i].CharacterBodyImage.SetNativeSize();
-                characterImages[i].CharacterBodyImage.transform.localPosition = appendedCharacter[i].BodyPostion;
-
-                characterImages[i].CharacterFaceImage.sprite = appendedCharacter[i].FaceSprite;
-                characterImages[i].CharacterFaceImage.SetNativeSize();
-                characterImages[i].CharacterFaceImage.transform.localPosition = appendedCharacter[i].FacePostion;
+                characterViews[i].SetCharacterVO(appendedCharacter[i]);
             }
 
         }
 
+        //キャラ数に応じて画面の表示倍率や位置を変える
         void SetViewPostionFromCharacterCount(int characterCount)
         {
             this.transform.localPosition = viewPostion[characterCount].Postion;

@@ -20,6 +20,7 @@ namespace Qitz.ADVGame
             this.SpriteBodyName = bodyName;
             this.SpriteFaceName = faceName;
             this.characterCommands = commandWrapVO.CommandValues;
+            this.Command = commandWrapVO;
         }
 
         IADVSpriteDataStore aDVSpriteDataStore;
@@ -36,9 +37,7 @@ namespace Qitz.ADVGame
         public string SpriteBodyName { get; private set; }
 
         public string SpriteFaceName { get; private set; }
-        
-        public CharacterEffectType CharacterEffectType { get; set; }
-        
+
 
         public Character Character => (Character)Enum.Parse(typeof(Character), Name, true);
 
@@ -52,15 +51,15 @@ namespace Qitz.ADVGame
         }
 
 
-        public ICharacterBodySpriteVO CharacterBodySpriteVO => aDVSpriteDataStore.BodySpriteList.FirstOrDefault(bs=>bs.Character== this.Character &&bs.Costume== this.Costume);
+        public ICharacterBodySpriteVO CharacterBodySpriteVO => aDVSpriteDataStore.BodySpriteList.FirstOrDefault(bs => bs.Character == this.Character && bs.Costume == this.Costume);
 
-        public ICharacterFaceSpriteVO FaceSpriteVO => aDVSpriteDataStore.FaceSpriteList.FirstOrDefault(fs=>fs.Character== this.Character&&fs.Expression== this.Expression);
+        public ICharacterFaceSpriteVO FaceSpriteVO => aDVSpriteDataStore.FaceSpriteList.FirstOrDefault(fs => fs.Character == this.Character && fs.Expression == this.Expression);
 
         public Sprite BodySprite {
-        get {
+            get {
                 if (!ExistBodySprite) return null;
 
-                var bs = this.aDVSpriteDataStore.BodySpriteList.FirstOrDefault(b=>b.Character== Character && b.Costume== Costume);
+                var bs = this.aDVSpriteDataStore.BodySpriteList.FirstOrDefault(b => b.Character == Character && b.Costume == Costume);
                 if (bs == null)
                 {
                     return this.aDVSpriteDataStore.BodySpriteList.FirstOrDefault(b => b.Character == Character).Sprite;
@@ -79,13 +78,15 @@ namespace Qitz.ADVGame
             }
         }
 
-        public Vector2 BodyPostion => aDVSpriteDataStore.CharacterBodyPostionList.FirstOrDefault(cbp=>cbp.Character== Character).Postion;
+        public Vector2 BodyPostion => aDVSpriteDataStore.CharacterBodyPostionList.FirstOrDefault(cbp => cbp.Character == Character).Postion;
 
         public Vector2 FacePostion => aDVSpriteDataStore.CharacterFacePostionList.FirstOrDefault(cfp => cfp.Character == Character).Postion;
 
-        public bool AppendCharacter => characterCommands.FirstOrDefault(cc=>cc.CommandValueType == CommandValueType.APPEAR) != null;
+        public bool AppendCharacter => characterCommands.FirstOrDefault(cc => cc.CommandValueType == CommandValueType.APPEAR) != null;
 
         public bool DisAppendCharacter => characterCommands.FirstOrDefault(cc => cc.CommandValueType == CommandValueType.DISAPPEAR) != null;
+
+        public ICommandWrapVO Command { get; private set; }
 
 
 
