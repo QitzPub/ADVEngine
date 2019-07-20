@@ -14,6 +14,7 @@ namespace Qitz.ADVGame
         string BGValue { get; }
         string JumpToValue { get; }
         //string BgmID { get; }
+        QitzAudioAsset QitzAudio { get; }
 
         List<ICommandWrapVO> Commands { get; }
 
@@ -23,7 +24,7 @@ namespace Qitz.ADVGame
 
         List<IChoiceVO> Choices { get; }
 
-        void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore);
+        void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore, IADVAudioDataStore aDVAudioDataStore);
 
     }
 

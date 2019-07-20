@@ -35,7 +35,7 @@ namespace Qitz.ADVGame
             {
                 ICutVO targetCut = cutVOs.FirstOrDefault(cv=>cv.SelTagValue== jumpTo);
                 if (targetCut == null) throw new Exception($"jump先が存在しません:{jumpTo}");
-                currentScenarioCutCount = targetCut.Number;
+                currentScenarioCutCount = targetCut.Number-1;
             }
 
             bool isScenarioEnd = cutVOs.Count <= currentScenarioCutCount;

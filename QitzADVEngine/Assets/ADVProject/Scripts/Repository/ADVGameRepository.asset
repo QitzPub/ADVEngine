@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: ADVGameRepository
   m_EditorClassIdentifier: 
   aDVSpriteDataStore: {fileID: 11400000, guid: 169b686b8eadc4b519c9632abbd61b59, type: 2}
+  aDVAudioDataStore: {fileID: 11400000, guid: 866852128e94743aabad66a0aac57526, type: 2}

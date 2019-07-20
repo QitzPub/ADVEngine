@@ -8,6 +8,7 @@ namespace Qitz.ADVGame
     public class CutVO : ICutVO
     {
         IADVSpriteDataStore aDVSpriteDataStore;
+        IADVAudioDataStore aDVAudioDataStore;
 
         WindowVO windowVO = new WindowVO();
         public IWindowVO WindowVO => windowVO;
@@ -41,6 +42,8 @@ namespace Qitz.ADVGame
 
         public string JumpToValue => commands.FirstOrDefault(cd => cd.JumpToValue != "") != null
                                     ? commands.FirstOrDefault(cd => cd.JumpToValue != "").JumpToValue : "";
+
+        public QitzAudioAsset QitzAudio => BGMValue == "" ? null : aDVAudioDataStore.QitzAudios.FirstOrDefault(qa => qa.Audio.name == System.IO.Path.GetFileNameWithoutExtension(BGMValue));
 
         public CutVO(int number)
         {
@@ -78,9 +81,10 @@ namespace Qitz.ADVGame
             windowVO.SetWindowText(windowText);
         }
 
-        public void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore)
+        public void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore, IADVAudioDataStore aDVAudioDataStore)
         {
             this.aDVSpriteDataStore = aDVSpriteDataStore;
+            this.aDVAudioDataStore = aDVAudioDataStore;
             Caracters.ForEach(cv => cv.SetDataStore(aDVSpriteDataStore));
             BackgroundVO?.SetDataStore(aDVSpriteDataStore);
         }

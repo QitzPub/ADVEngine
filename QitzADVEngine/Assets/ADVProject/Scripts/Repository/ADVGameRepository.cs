@@ -15,11 +15,13 @@ namespace Qitz.ADVGame
 
         [SerializeField]
         ADVSpriteDataStore aDVSpriteDataStore;
+        [SerializeField]
+        ADVAudioDataStore aDVAudioDataStore;
 
         public void Initialize(string macro)
         {
             this.aDVGameDataStore = new ADVGameDataStore(macro);
-            aDVGameDataStore.SetDataStore(aDVSpriteDataStore);
+            aDVGameDataStore.SetDataStore(aDVSpriteDataStore, aDVAudioDataStore);
         }
 
     }

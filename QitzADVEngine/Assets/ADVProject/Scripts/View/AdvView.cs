@@ -19,6 +19,7 @@ namespace Qitz.ADVGame
         [SerializeField] private ACharacterView _characterView;
         [SerializeField] private AWindowView _windowView;
         [SerializeField] private AChoiceSelectView _choiceSelectView;
+        [SerializeField] private ADVAudioPlayer aDVAudioPlayer;
         public override IObservable<Unit> ASVScenarioEndObservable => this.aDVGameController.ASVScenarioEndObservable;
         public override IObservable<ICutVO> ADVCutObservable => this.aDVGameController.ADVCutObservable;
         ICutVO currentCut;
@@ -43,7 +44,7 @@ namespace Qitz.ADVGame
             currentCut = cutVo;
 
 
-            //ここをよしなにすべし！！！
+            aDVAudioPlayer.PlayAudio(cutVo.QitzAudio?.Audio);
             _windowView.SetWindowVO(cutVo.WindowVO);
             _backgroundView.SetBackgroundVO(cutVo.BackgroundVO);
             //_backgroundView.SetEffect(cutVo.Commands);

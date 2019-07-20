@@ -8,7 +8,7 @@ namespace Qitz.ADVGame
     public interface IADVGameDataStore
     {
         List<ICutVO> CutVOs { get; }
-        void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore);
+        void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore, IADVAudioDataStore aDVAudioDataStore);
     }
 
     public class ADVGameDataStore : ADataStore, IADVGameDataStore
@@ -24,9 +24,9 @@ namespace Qitz.ADVGame
 
         public List<ICutVO> CutVOs { get; private set; }
 
-        public void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore)
+        public void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore, IADVAudioDataStore aDVAudioDataStore)
         {
-            CutVOs.ForEach(cv => cv.SetDataStore(aDVSpriteDataStore));
+            CutVOs.ForEach(cv => cv.SetDataStore(aDVSpriteDataStore, aDVAudioDataStore));
         }
         
         
