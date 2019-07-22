@@ -19,16 +19,16 @@ namespace Qitz.ADVGame
             this.Name = characterName;
             this.SpriteBodyName = bodyName;
             this.SpriteFaceName = faceName;
-            this.characterCommands = commandWrapVO.CommandValues;
+            //this.characterCommands = commandWrapVO.CommandValues;
             this.Command = commandWrapVO;
         }
 
         IADVSpriteDataStore aDVSpriteDataStore;
 
-        List<CommandVO> characterCommands;
+        //List<CommandVO> characterCommands;
 
-        public bool ExistFaseSprite => characterCommands.FirstOrDefault(cv => cv.CommandValueType == CommandValueType.SET_FACE) != null && SpriteFaceName != "";
-        public bool ExistBodySprite => characterCommands.FirstOrDefault(cv => cv.CommandValueType == CommandValueType.SET_COSTUME) != null && SpriteBodyName != "";
+        public bool ExistFaseSprite => Command.CommandValues.FirstOrDefault(cv => cv.CommandValueType == CommandValueType.SET_FACE) != null && SpriteFaceName != "";
+        public bool ExistBodySprite => Command.CommandValues.FirstOrDefault(cv => cv.CommandValueType == CommandValueType.SET_COSTUME) != null && SpriteBodyName != "";
 
         public string Name { get; private set; }
 
@@ -82,9 +82,9 @@ namespace Qitz.ADVGame
 
         public Vector2 FacePostion => aDVSpriteDataStore.CharacterFacePostionList.FirstOrDefault(cfp => cfp.Character == Character).Postion;
 
-        public bool AppendCharacter => characterCommands.FirstOrDefault(cc => cc.CommandValueType == CommandValueType.APPEAR) != null;
+        public bool AppendCharacter => Command.CommandValues.FirstOrDefault(cc => cc.CommandValueType == CommandValueType.APPEAR) != null;
 
-        public bool DisAppendCharacter => characterCommands.FirstOrDefault(cc => cc.CommandValueType == CommandValueType.DISAPPEAR) != null;
+        public bool DisAppendCharacter => Command.CommandValues.FirstOrDefault(cc => cc.CommandValueType == CommandValueType.DISAPPEAR) != null;
 
         public ICommandWrapVO Command { get; private set; }
 
@@ -105,8 +105,19 @@ namespace Qitz.ADVGame
             this.Name = newCharacterState.Name;
             this.SpriteBodyName = newCharacterState.SpriteBodyName == "" ? this.SpriteBodyName : newCharacterState.SpriteBodyName;
             this.SpriteFaceName = newCharacterState.SpriteFaceName == "" ? this.SpriteFaceName : newCharacterState.SpriteFaceName;
+            //キャラクターの消失コマンドもマージする
+            var disApperCommand = newCharacterState.Command.CommandValues.FirstOrDefault(cc => cc.CommandValueType == CommandValueType.DISAPPEAR);
+            if(disApperCommand != null && !DisAppendCharacter)
+            {
+                Command.CommandValues.Add(disApperCommand);
 
-
+            }
+            //キャラの出現コマンドを取り除く
+            var apperCommand = Command.CommandValues.FirstOrDefault(cc => cc.CommandValueType == CommandValueType.APPEAR);
+            if(apperCommand != null)
+            {
+                Command.CommandValues.Remove(apperCommand);
+            }
         }
     }
 }

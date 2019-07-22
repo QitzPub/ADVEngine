@@ -48,6 +48,9 @@ namespace Qitz.ADVGame
             characterViews.Where(cv => cv.DisAppendCharacter).ToList().ForEach(cv => cv.DisAppendEffect());
             //コマンドに出現コマンドが入っていたら出現エフェクトを入れる
             characterViews.Where(cv => cv.AppendCharacter).ToList().ForEach(cv => cv.AppendEffect());
+            //消失フラグが入っているキャラクターをリストから取り除く
+            characters.ForEach(c => RemoveDisAppendCharacter(ref appendedCharacter, c));
+
         }
 
         //キャラ数に応じて画面の表示倍率や位置を変える
@@ -64,13 +67,18 @@ namespace Qitz.ADVGame
             {
                 _appendedCharacter.Add(newCharacterVO);
             }
-            else if (newCharacterVO.DisAppendCharacter)
-            {
-                _appendedCharacter = _appendedCharacter.Where(ac => ac.Name != newCharacterVO.Name).ToList();
-            }
+
             else
             {
                 UpdateCharacterState(ref _appendedCharacter, newCharacterVO);
+            }
+        }
+
+        void RemoveDisAppendCharacter(ref List<ICaracterVO> _appendedCharacter, ICaracterVO newCharacterVO)
+        {
+            if (newCharacterVO.DisAppendCharacter)
+            {
+                _appendedCharacter = _appendedCharacter.Where(ac => ac.Name != newCharacterVO.Name).ToList();
             }
         }
 
