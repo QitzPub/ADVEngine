@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
 using System.Linq;
+using UniRx.Async;
+using UniRx.Triggers;
+using System.Linq;
 
 namespace Qitz.ADVGame
 {
@@ -16,7 +19,7 @@ namespace Qitz.ADVGame
     public class AdvView : AAdvView
     {
         [SerializeField] private ABackgroundView _backgroundView;
-        [SerializeField] private ACharactersWrapView _characterView;
+        [SerializeField] private ACharactersWrapView _charactersWrapView;
         [SerializeField] private AWindowView _windowView;
         [SerializeField] private AChoiceSelectView _choiceSelectView;
         [SerializeField] private ADVAudioPlayer aDVAudioPlayer;
@@ -26,8 +29,9 @@ namespace Qitz.ADVGame
         ICutVO currentCut;
 
 
-        public override void Next(string jumpTo = "")
+        public async override void Next(string jumpTo = "")
         {
+            await this.UpdateAsObservable().Where(_ => _charactersWrapView.CharacterViews.All(cv => !cv.IsAnimating)).Take(1);
             string _jumpTo = jumpTo;
             bool ableToJump = currentCut != null && currentCut.JumpToValue != "";
             if (ableToJump) _jumpTo = currentCut.JumpToValue;
@@ -57,7 +61,7 @@ namespace Qitz.ADVGame
             //バックグラウンドの更新
             _backgroundView.SetBackgroundVO(cutVo.BackgroundVO);
             //キャラクタービューの更新
-            _characterView.SetCaracterVO(cutVo.Caracters);
+            _charactersWrapView.SetCaracterVO(cutVo.Caracters);
             //選択肢の表示
             SetChoiceView(cutVo);
         }

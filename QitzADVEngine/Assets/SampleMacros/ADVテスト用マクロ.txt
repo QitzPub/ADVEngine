@@ -22,11 +22,13 @@ A few days after the gokon--.
 Hi everyone, sorry for causing trouble last week.
 
 [se file="se_test2.wav"]
-[リリファ 出 顔 通常服 tb 笑顔 time=0]
+[リリファ 出 顔 通常服 tb 笑顔 time=100]
 【リリファ】
 Sure!
 
 Akira and I decided to go to karaoke with the girls.
+
+[リリファ 消 time=1000]
 
 [jampto target=*end]
 
@@ -39,11 +41,11 @@ Hey Akira, want to do the first song?
 【アイン】
 Mmmm.
 
-[リリファ 出 顔 通常服 真顔]
+[リリファ 出 顔 通常服 真顔 time=1000]
 【リリファ】
 (Is Akira a little nervous?)
 
-[リリファ 消 time=0]
+[リリファ 消 time=1000]
 [アイン 消 time=0]
 [bgm file="bgm002_a.wav"]
 ♪～

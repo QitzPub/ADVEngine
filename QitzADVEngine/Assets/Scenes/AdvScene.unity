@@ -985,6 +985,7 @@ GameObject:
   m_Component:
   - component: {fileID: 876142398}
   - component: {fileID: 876142399}
+  - component: {fileID: 876142400}
   m_Layer: 5
   m_Name: CharacterViewC
   m_TagString: Untagged
@@ -1024,6 +1025,21 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &876142400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876142397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e7d124f59be483c83f9440e37f76ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterBodyImage: {fileID: 629512634}
+  characterFaceImage: {fileID: 1280265676}
+  canvasGroup: {fileID: 876142399}
 --- !u!1 &888237592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2028,6 +2044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1516086274}
   - component: {fileID: 1516086275}
+  - component: {fileID: 1516086276}
   m_Layer: 5
   m_Name: CharacterViewA
   m_TagString: Untagged
@@ -2067,6 +2084,21 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1516086276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516086273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e7d124f59be483c83f9440e37f76ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterBodyImage: {fileID: 345542104}
+  characterFaceImage: {fileID: 1893399477}
+  canvasGroup: {fileID: 1516086275}
 --- !u!1 &1525687475
 GameObject:
   m_ObjectHideFlags: 0
@@ -2152,6 +2184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1541663473}
   - component: {fileID: 1541663474}
+  - component: {fileID: 1541663475}
   m_Layer: 5
   m_Name: CharacterViewB
   m_TagString: Untagged
@@ -2191,6 +2224,21 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1541663475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541663472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e7d124f59be483c83f9440e37f76ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterBodyImage: {fileID: 1525687477}
+  characterFaceImage: {fileID: 1435268262}
+  canvasGroup: {fileID: 1541663474}
 --- !u!1 &1587277839
 GameObject:
   m_ObjectHideFlags: 0
@@ -2379,7 +2427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _backgroundView: {fileID: 1131452410}
-  _characterView: {fileID: 2125059969}
+  _charactersWrapView: {fileID: 2125059969}
   _windowView: {fileID: 82977581}
   _choiceSelectView: {fileID: 1563937}
   aDVAudioPlayer: {fileID: 1172073200}
@@ -2789,18 +2837,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterViews:
-  - parent: {fileID: 1516086273}
-    characterBodyImage: {fileID: 345542104}
-    characterFaceImage: {fileID: 1893399477}
-    canvasGroup: {fileID: 1516086275}
-  - parent: {fileID: 1541663472}
-    characterBodyImage: {fileID: 1525687477}
-    characterFaceImage: {fileID: 1435268262}
-    canvasGroup: {fileID: 1541663474}
-  - parent: {fileID: 876142397}
-    characterBodyImage: {fileID: 629512634}
-    characterFaceImage: {fileID: 1280265676}
-    canvasGroup: {fileID: 876142399}
+  - {fileID: 1516086276}
+  - {fileID: 1541663475}
+  - {fileID: 876142400}
   viewPostion:
   - postion: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}

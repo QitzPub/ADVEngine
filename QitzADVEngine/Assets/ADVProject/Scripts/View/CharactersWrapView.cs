@@ -8,34 +8,8 @@ namespace Qitz.ADVGame
 {
     public class CharactersWrapView : ACharactersWrapView
     {
-        [System.Serializable]
-        class CharacterView
-        {
-            [SerializeField]
-            GameObject parent;
-            public GameObject Parent => parent;
-            [SerializeField]
-            Image characterBodyImage;
-            public Image CharacterBodyImage =>characterBodyImage;
-            [SerializeField]
-            Image characterFaceImage;
-            public Image CharacterFaceImage => characterFaceImage;
-            [SerializeField]
-            CanvasGroup canvasGroup;
 
-            public void SetCharacterVO(ICaracterVO caracterVO)
-            {
-                Parent.SetActive(true);
-                CharacterBodyImage.sprite = caracterVO.BodySprite;
-                CharacterBodyImage.SetNativeSize();
-                CharacterBodyImage.transform.localPosition = caracterVO.BodyPostion;
 
-                CharacterFaceImage.sprite = caracterVO.FaceSprite;
-                CharacterFaceImage.SetNativeSize();
-                CharacterFaceImage.transform.localPosition = caracterVO.FacePostion;
-            }
-
-        }
         [System.Serializable]
         struct CharacterViewPostionSetting
         {
@@ -56,18 +30,24 @@ namespace Qitz.ADVGame
         //List<ICaracterVO> prevAppendedCharacter = new List<ICaracterVO>();
         List<ICaracterVO> appendedCharacter = new List<ICaracterVO>();
 
+        public override List<CharacterView> CharacterViews => characterViews;
+
         public override void SetCaracterVO(List<ICaracterVO> characters)
         {
             characters.ForEach(c=> SetAppendedCharacterList(ref appendedCharacter,c));
             SetViewPostionFromCharacterCount(appendedCharacter.Count);
             //一旦キャラクタービュウを非表示に
-            characterViews.ForEach(cv => cv.Parent.SetActive(false));
+            characterViews.ForEach(cv => cv.gameObject.SetActive(false));
 
             for (int i = 0; i < appendedCharacter.Count; i++)
             {
                 characterViews[i].SetCharacterVO(appendedCharacter[i]);
             }
 
+            //ここでキャラクター消失フラグが入っているキャラクターを消すエフェクト
+            characterViews.Where(cv => cv.DisAppendCharacter).ToList().ForEach(cv => cv.DisAppendEffect());
+            //コマンドに出現コマンドが入っていたら出現エフェクトを入れる
+            characterViews.Where(cv => cv.AppendCharacter).ToList().ForEach(cv => cv.AppendEffect());
         }
 
         //キャラ数に応じて画面の表示倍率や位置を変える
