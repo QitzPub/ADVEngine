@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.Linq;
+using UniRx.Async;
 
 namespace Qitz.ADVGame
 {
@@ -28,11 +29,18 @@ namespace Qitz.ADVGame
             }
         }
 
-        public override void HideView()
+        public async override UniTask HideView()
         {
-            SelectItems.ForEach(si=>si.HideView());
+            SelectItems.Where(si=>!si.IsSelected).ToList().ForEach(si=>si.HideView());
+            await UniTask.Delay(2000);
+            SelectItems.FirstOrDefault(si => si.IsSelected).HideView();
             background.gameObject.SetActive(false);
         }
 
+        public override void HideImmediately()
+        {
+            SelectItems.ForEach(si => si.gameObject.SetActive(false));
+            background.gameObject.SetActive(false);
+        }
     }
 }

@@ -51,9 +51,11 @@ Mmmm.
 ♪～
 
 [bg file="034003.jpg"]
-[messageon]
+[messageoff]
 After Karaoke--.
 
 [seltag target=*end]
+
 [wait keyinput]
+[暗転共通]
 

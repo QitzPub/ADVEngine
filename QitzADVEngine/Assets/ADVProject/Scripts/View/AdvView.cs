@@ -76,12 +76,13 @@ namespace Qitz.ADVGame
             }
             else
             {
-                _choiceSelectView.HideView();
+                _choiceSelectView.HideImmediately();
             }
         }
 
-        void ChoiceSelectAction(string selectValue)
+        async void ChoiceSelectAction(string selectValue)
         {
+            await _choiceSelectView.HideView();
             Next(selectValue);
         }
 

@@ -11,6 +11,8 @@ namespace Qitz.ADVGame
         Text name;
         [SerializeField]
         Text body;
+        [SerializeField]
+        TextAnimation bodyTextAnimation;
 
         public override void Hide()
         {
@@ -19,7 +21,8 @@ namespace Qitz.ADVGame
 
         public override void SetWindowVO(IWindowVO vo)
         {
-            body.text = vo.WindowText;
+            //body.text = vo.WindowText;
+            bodyTextAnimation.SetNextLine(vo.WindowText);
             name.text = vo.WindowCharacterName;
         }
 
