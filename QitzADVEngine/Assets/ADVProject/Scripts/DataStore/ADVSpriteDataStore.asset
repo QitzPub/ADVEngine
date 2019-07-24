@@ -150,16 +150,9 @@ MonoBehaviour:
     character: 16
     expression: 18
   backgroundSpriteList:
-  - sprite: {fileID: 21300000, guid: b9b20ca444c014fd49706ad72d4736b3, type: 3}
-  - sprite: {fileID: 21300000, guid: 7471bd26532af4af6af329a7536cb7f6, type: 3}
-  - sprite: {fileID: 21300000, guid: 885ae27a809c14642814aec1f6725dc2, type: 3}
-  - sprite: {fileID: 21300000, guid: 325eb9c4a53b346319fbd9a76a775fd2, type: 3}
   - sprite: {fileID: 21300000, guid: 2c21a2386c6bf486dadb1ff07bf4e3d8, type: 3}
-  - sprite: {fileID: 21300000, guid: f6a3f4ce1f65f46438471932774117ac, type: 3}
   - sprite: {fileID: 21300000, guid: 4b1561be2c138482fa3732cbc417b93e, type: 3}
-  - sprite: {fileID: 21300000, guid: 4a78b7333d02a4c089350d0173cb4501, type: 3}
   - sprite: {fileID: 21300000, guid: 57d97cf1bc7224e3594fcd16af4d2627, type: 3}
-  - sprite: {fileID: 21300000, guid: 8d8e8cfeafa124393a853a28c6e1d694, type: 3}
   characterBodyPostionList:
   - postion: {x: 0, y: -1061}
     character: 8

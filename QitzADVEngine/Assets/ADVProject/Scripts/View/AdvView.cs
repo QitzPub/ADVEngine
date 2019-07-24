@@ -46,12 +46,12 @@ namespace Qitz.ADVGame
             this.aDVGameController.Next(_jumpTo);
         }
 
-        private void Start()
+        private async void Start()
         {
             ADVCutObservable.Subscribe(cutVO => UpdateADVViews(cutVO)).AddTo(this.gameObject);
+            effectView.BlackOutEndObservable.Subscribe(_ => Next());
             Next();
             //ブラックアウトが走った場合は次のCutへ
-            effectView.BlackOutEndObservable.Subscribe(_ => Next());
         }
 
         void UpdateADVViews(ICutVO cutVo)
