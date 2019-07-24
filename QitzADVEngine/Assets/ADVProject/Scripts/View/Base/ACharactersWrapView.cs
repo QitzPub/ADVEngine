@@ -7,5 +7,6 @@ namespace Qitz.ADVGame
     {
         abstract public void SetCaracterVO(List<ICaracterVO> characters);
         abstract public List<CharacterView> CharacterViews { get; }
+        abstract public void ClearCharacterCache();
     }
 }

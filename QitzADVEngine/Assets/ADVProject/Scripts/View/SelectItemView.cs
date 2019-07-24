@@ -15,6 +15,7 @@ namespace Qitz.ADVGame
         abstract public void Initialize(List<CommandVO> selectCommands, Action<string> selectAction);
         abstract public void HideView();
         abstract public void ShowView();
+        abstract public void DisableButton();
     }
 
     public class SelectItemView : ASelectItemView
@@ -55,7 +56,13 @@ namespace Qitz.ADVGame
                 selectAction.Invoke(selectValue);
 
             });
+            button.enabled = true;
             this.gameObject.SetActive(true);
+        }
+
+        public override void DisableButton()
+        {
+            button.enabled = false;
         }
     }
 }

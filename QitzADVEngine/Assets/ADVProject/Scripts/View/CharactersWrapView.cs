@@ -93,6 +93,10 @@ namespace Qitz.ADVGame
             }
         }
 
+        public override void ClearCharacterCache()
+        {
+            appendedCharacter = new List<ICaracterVO>();
+        }
 
     }
 }

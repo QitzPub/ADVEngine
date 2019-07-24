@@ -10,10 +10,11 @@ namespace Qitz.ADVGame
 {
     public interface IADVGameController
     {
-        IObservable<Unit> ASVScenarioEndObservable { get; }
+        IObservable<List<int>> ASVScenarioEndObservable { get; }
         IObservable<ICutVO> ADVCutObservable { get; }
         void Initialize(string macro);
         void Next(string jumpTo);
+        void AddSelect(int selectNumber);
     }
 
     public class ADVGameController : AController<ADVGameRepository>, IADVGameController
@@ -23,25 +24,28 @@ namespace Qitz.ADVGame
         protected override ADVGameRepository Repository { get { return repository; } }
         Subject<ICutVO> advCutSunject = new Subject<ICutVO>();
         public IObservable<ICutVO> ADVCutObservable => advCutSunject;
-        Subject<Unit> advScenarioEndSubject = new Subject<Unit>();
-        public IObservable<Unit> ASVScenarioEndObservable => advScenarioEndSubject;
-        List<ICutVO> cutVOs => repository.ADVGameDataStore.CutVOs;
+        Subject<List<int>> advScenarioEndSubject = new Subject<List<int>>();
+        public IObservable<List<int>> ASVScenarioEndObservable => advScenarioEndSubject;
+        List<ICutVO> cutVOs => repository.CutVOs;
         int aDVCutCount => cutVOs.Count;
         int currentScenarioCutCount = 0;
+        List<int> selectedChoice = new List<int>();
+        string cacheMacro;
 
         public void Next(string jumpTo = "")
         {
             if(jumpTo != "")
             {
+                repository.ReLoad(cacheMacro);
                 ICutVO targetCut = cutVOs.FirstOrDefault(cv=>cv.SelTagValue== jumpTo);
                 if (targetCut == null) throw new Exception($"jump先が存在しません:{jumpTo}");
                 currentScenarioCutCount = targetCut.Number-1;
             }
 
-            bool isScenarioEnd = cutVOs.Count <= currentScenarioCutCount;
+            bool isScenarioEnd = cutVOs.Count <= currentScenarioCutCount+1;
             if (isScenarioEnd) {
-                Debug.Log("isScenarioEnd");
-                advScenarioEndSubject.OnNext(Unit.Default);
+                Debug.Log($"isScenarioEnd{selectedChoice[0]}");
+                advScenarioEndSubject.OnNext(selectedChoice);
                 return;
             }
             advCutSunject.OnNext(cutVOs[currentScenarioCutCount]);
@@ -50,8 +54,13 @@ namespace Qitz.ADVGame
 
         public void Initialize(string macro)
         {
+            this.cacheMacro = macro;
             this.repository.Initialize(macro);
         }
 
+        public void AddSelect(int selectNumber)
+        {
+            selectedChoice.Add(selectNumber);
+        }
     }
 }

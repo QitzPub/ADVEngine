@@ -7,12 +7,13 @@ using System.Linq;
 using UniRx.Async;
 using UniRx.Triggers;
 using System.Linq;
+using Qitz.ArchitectureCore;
 
 namespace Qitz.ADVGame
 {
     public  abstract class  AAdvView:ADVGameView{
         public abstract void Next(string jumpTo);
-        public abstract IObservable<Unit> ASVScenarioEndObservable { get; }
+        public abstract IObservable<List<int>> ASVScenarioEndObservable { get; }
         public abstract IObservable<ICutVO> ADVCutObservable { get; }
     }
     
@@ -21,16 +22,23 @@ namespace Qitz.ADVGame
         [SerializeField] private ABackgroundView _backgroundView;
         [SerializeField] private ACharactersWrapView _charactersWrapView;
         [SerializeField] private AWindowView _windowView;
-        [SerializeField] private AChoiceSelectView _choiceSelectView;
+        [SerializeField] private Transform _choiceSelectViewEmitter;
+        [SerializeField] private ChoiceSelectView choiceSelectViewPrefab;
+        ChoiceSelectView currentChoiseSelectView;
         [SerializeField] private ADVAudioPlayer aDVAudioPlayer;
         [SerializeField] private EffectView effectView;
-        public override IObservable<Unit> ASVScenarioEndObservable => this.aDVGameController.ASVScenarioEndObservable;
+        public override IObservable<List<int>> ASVScenarioEndObservable => this.aDVGameController.ASVScenarioEndObservable;
         public override IObservable<ICutVO> ADVCutObservable => this.aDVGameController.ADVCutObservable;
         ICutVO currentCut;
 
 
         public async override void Next(string jumpTo = "")
         {
+            if (_windowView.IsTyping)
+            {
+                _windowView.ShowAllText();
+                return;
+            }
             await this.UpdateAsObservable().Where(_ => _charactersWrapView.CharacterViews.All(cv => !cv.IsAnimating)).Take(1);
             string _jumpTo = jumpTo;
             bool ableToJump = currentCut != null && currentCut.JumpToValue != "";
@@ -72,17 +80,23 @@ namespace Qitz.ADVGame
             if (existSelectCommand)
             {
                 var salAddList = cutVo.Commands.Where(cd => cd.CommandHeadVO.CommandType == CommandType.SELADD).ToList();
-                _choiceSelectView.Initialize(ChoiceSelectAction, salAddList);
+                currentChoiseSelectView = PrefabFolder.InstantiateTo<ChoiceSelectView>(choiceSelectViewPrefab,_choiceSelectViewEmitter);
+                currentChoiseSelectView.Initialize(ChoiceSelectAction, salAddList);
             }
-            else
-            {
-                _choiceSelectView.HideImmediately();
-            }
+            //else
+            //{
+            //    _choiceSelectView.HideImmediately();
+            //}
         }
 
         async void ChoiceSelectAction(string selectValue)
         {
-            await _choiceSelectView.HideView();
+            var selectItem = currentChoiseSelectView.SelectItems.FirstOrDefault(si=>si.IsSelected);
+            int selectedNumber = currentChoiseSelectView.SelectItems.IndexOf(selectItem);
+            this.aDVGameController.AddSelect(selectedNumber);
+            await currentChoiseSelectView.HideView();
+            //選択肢選択後はシナリオスクリプトをリロードする
+
             Next(selectValue);
         }
 

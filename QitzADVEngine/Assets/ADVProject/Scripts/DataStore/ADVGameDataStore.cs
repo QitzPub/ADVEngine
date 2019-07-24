@@ -11,15 +11,14 @@ namespace Qitz.ADVGame
         void SetDataStore(IADVSpriteDataStore aDVSpriteDataStore, IADVAudioDataStore aDVAudioDataStore);
     }
 
+    //[CreateAssetMenu]
     public class ADVGameDataStore : ADataStore, IADVGameDataStore
     {
 
-        public ADVGameDataStore(string macro)
+        public void Initialize(string macro)
         {
-        
             QitzADVMacroParseUtil util = new QitzADVMacroParseUtil(macro);
             CutVOs = util.Deserialize();
-
         }
 
         public List<ICutVO> CutVOs { get; private set; }

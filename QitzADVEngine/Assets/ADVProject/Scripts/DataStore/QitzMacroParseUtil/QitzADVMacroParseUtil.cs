@@ -286,9 +286,9 @@ namespace Qitz.ADVGame.ParseUtil
             {
                 return new CommandHeadVO(CommandType.SELTAG, "");
             }
-            else if (commandWord == CommandString.jampto.ToString())
+            else if (commandWord == CommandString.jumpto.ToString())
             {
-                return new CommandHeadVO(CommandType.JAMPTO, "");
+                return new CommandHeadVO(CommandType.JUMPTO, "");
             }
             else if (commandWord == CommandString.se.ToString())
             {

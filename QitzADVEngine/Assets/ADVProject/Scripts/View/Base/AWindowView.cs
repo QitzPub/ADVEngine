@@ -6,5 +6,7 @@ namespace Qitz.ADVGame
         abstract public void SetWindowVO(IWindowVO vo);
         abstract public void Hide();
         abstract public void Show();
+        abstract public bool IsTyping { get; }
+        abstract public void ShowAllText();
     }
 }

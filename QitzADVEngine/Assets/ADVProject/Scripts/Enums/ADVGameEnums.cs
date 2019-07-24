@@ -44,7 +44,7 @@ namespace Qitz.ADVGame
         SELADD,
         SELECT,
         SELTAG,
-        JAMPTO,
+        JUMPTO,
     }
     public enum CommandValueType
     {
@@ -77,7 +77,7 @@ namespace Qitz.ADVGame
         seladd,
         select,
         seltag,
-        jampto,
+        jumpto,
         se,
     }
     public enum CommandValueString

@@ -48,6 +48,37 @@ namespace Qitz.ADVGame
         //{
 
         //}
+        public void Reset()
+        {
+            switch (tweenType)
+            {
+                case TweenType.SCALE:
+                    {
+                        this.transform.localScale = new Vector3(from, from);
+                    }
+                    break;
+                case TweenType.LOCAL_POSTION_X:
+                    {
+                        var localPos = this.transform.localPosition;
+                        this.transform.localPosition = new Vector3(from, localPos.y);
+                    }
+                    break;
+                case TweenType.LOCAL_POSTION_Y:
+                    {
+                        var localPos = this.transform.localPosition;
+                        this.transform.localPosition = new Vector3(localPos.x, from);
+                    }
+                    break;
+                case TweenType.ALPHA:
+                    {
+                        canvasGroup.alpha = 1;
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+
         [ContextMenu("TweenAnimation実行")]
         public async void DoTween()
         {

@@ -23,7 +23,10 @@ namespace Qitz.ADVGame
         // 文字の表示が完了しているかどうか
         public bool IsCompleteDisplayText
         {
-            get { return Time.time > timeElapsed + timeUntilDisplay; }
+            get {
+                if (currentText == string.Empty) return true;
+                return Time.time > timeElapsed + timeUntilDisplay; 
+            }
         }
 
 
@@ -54,6 +57,10 @@ namespace Qitz.ADVGame
             }
         }
 
+        public void ShowAllText()
+        {
+            timeUntilDisplay = 0;
+        }
 
         public void SetNextLine(string Text)
         {
