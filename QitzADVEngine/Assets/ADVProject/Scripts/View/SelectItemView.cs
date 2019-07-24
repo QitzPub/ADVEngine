@@ -29,12 +29,13 @@ namespace Qitz.ADVGame
         [SerializeField]
         iTweenAnimation hideAnimation;
         public bool IsSelected { get; private set; }
+        public bool IsAnimating => (showAnimations.Any(sa => sa.IsAnimating) || hideAnimation.IsAnimating) && this.gameObject.activeSelf;
 
         public async override void HideView()
         {
             hideAnimation.DoTween();
-            await this.UpdateAsObservable().Where(_ => !hideAnimation.IsAnimating).Take(1);
-            this.gameObject.SetActive(false);
+            await this.UpdateAsObservable().Where(_ => !hideAnimation.IsAnimating || !this.gameObject.activeSelf).Take(1);
+            //this.gameObject.SetActive(false);
             IsSelected = false;
         }
         public override void ShowView()

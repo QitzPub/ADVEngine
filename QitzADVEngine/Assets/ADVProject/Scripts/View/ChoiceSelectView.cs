@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using System;
 using System.Linq;
 using UniRx.Async;
+using UniRx.Triggers;
+using UniRx;
 
 namespace Qitz.ADVGame
 {
@@ -36,7 +38,10 @@ namespace Qitz.ADVGame
             SelectItems.Where(si=>!si.IsSelected).ToList().ForEach(si=>si.HideView());
             await UniTask.Delay(2000);
             SelectItems.FirstOrDefault(si => si.IsSelected).HideView();
+            await this.UpdateAsObservable().Where(_ => SelectItems.All(si => !si.IsAnimating)).Take(1);
+            await UniTask.Delay(200);
             background.gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
 
         public override void HideImmediately()

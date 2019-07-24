@@ -60,7 +60,7 @@ namespace Qitz.ADVGame
             }
 
             await this.UpdateAsObservable()
-                  .Where(_ => bodyTextAnimation.IsCompleteDisplayText || !bodyDisplay.activeSelf).Take(1);
+                  .Where(_ => bodyTextAnimation.IsCompleteDisplayText || !bodyDisplay.activeSelf).Take(1).ToTask().AddTo(this.gameObject);
 
             pageNextAnimation.SetActive(true);
 
